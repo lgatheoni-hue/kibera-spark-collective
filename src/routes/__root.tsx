@@ -72,12 +72,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "WMAGE — Women in Monitoring and Advancing General Empowerment" },
-      { name: "description", content: "WMAGE is a grassroots Kibera organization equipping women and youth with skills, income, and leadership to transform their community." },
-      { property: "og:title", content: "WMAGE — Empowering Women and Youth in Kibera" },
-      { property: "og:description", content: "Practical training, microgrants, circular economy pilots, and leadership fellowships in Kibera, Nairobi." },
+      { title: "WIMAGE KENYA" },
+      { name: "description", content: "WMAGE is a community organization located in Kibera, Kenya, that equips women and youth with skills, income, and leadership to transform their communities." },
+      { property: "og:title", content: "WIMAGE KENYA" },
+      { property: "og:description", content: "WMAGE is a community organization located in Kibera, Kenya, that equips women and youth with skills, income, and leadership to transform their communities." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "WIMAGE KENYA" },
+      { name: "twitter:description", content: "WMAGE is a community organization located in Kibera, Kenya, that equips women and youth with skills, income, and leadership to transform their communities." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d99913ed-effe-4c1b-8904-c19425a1279d/id-preview-e904c0ef--abe897d4-9ff1-49a3-83ff-06b21f546609.lovable.app-1780039798758.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d99913ed-effe-4c1b-8904-c19425a1279d/id-preview-e904c0ef--abe897d4-9ff1-49a3-83ff-06b21f546609.lovable.app-1780039798758.png" },
     ],
     links: [
       {
