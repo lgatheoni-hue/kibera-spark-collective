@@ -72,11 +72,11 @@ export function SiteLayout() {
           <div className="flex items-center gap-3">
             <Link
               to="/contact"
-              className="hidden md:inline-flex items-center gap-1.5 text-sm px-4 py-2 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all hover:gap-2"
+              className="hidden md:inline-flex items-center text-sm px-5 py-2.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium"
             >
-              Partner with us
-              <span aria-hidden>→</span>
+              Get Started
             </Link>
+
             <button
               aria-label="Menu"
               onClick={() => setOpen((o) => !o)}
@@ -105,9 +105,10 @@ export function SiteLayout() {
               ))}
               <Link
                 to="/contact"
-                className="mt-4 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-primary text-primary-foreground"
+                className="mt-4 inline-flex items-center justify-center px-5 py-3 rounded-full bg-primary text-primary-foreground font-medium"
               >
-                Partner with us →
+                Get Started
+
               </Link>
             </div>
           </div>

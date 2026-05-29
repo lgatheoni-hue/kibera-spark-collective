@@ -1,4 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import heroImg from "../assets/photo-advocacy-signs.jpg";
+import problemImg from "../assets/photo-community-3.jpg";
+import measureImg from "../assets/photo-library.jpg";
+import outcomeImg from "../assets/photo-rally.jpg";
 
 export const Route = createFileRoute("/theory-of-change")({
   head: () => ({
@@ -31,14 +35,28 @@ function ToC() {
         </p>
       </section>
 
-      <section className="container-x pb-8">
-        <div className="rounded-3xl bg-ink text-cream p-8 md:p-12">
-          <p className="eyebrow mb-3" style={{ color: "var(--ochre)" }}>Problem statement</p>
-          <p className="font-serif text-2xl md:text-3xl leading-snug max-w-4xl">
-            Persistent unemployment, entrenched gender inequality, and environmental hazards prevent women and youth in Kibera from earning stable incomes and shaping decisions that affect their lives.
-          </p>
+      {/* Hero image */}
+      <section className="container-x pb-4">
+        <div className="rounded-3xl overflow-hidden aspect-[21/9]">
+          <img src={heroImg} alt="WMAGE advocates holding signs for equality and against gender-based violence" className="w-full h-full object-cover" />
         </div>
       </section>
+
+
+      <section className="container-x pb-8">
+        <div className="grid md:grid-cols-2 gap-6 items-stretch">
+          <div className="rounded-3xl bg-ink text-cream p-8 md:p-12 flex flex-col justify-center">
+            <p className="eyebrow mb-3" style={{ color: "var(--ochre)" }}>Problem statement</p>
+            <p className="font-serif text-2xl md:text-3xl leading-snug">
+              Persistent unemployment, entrenched gender inequality, and environmental hazards prevent women and youth in Kibera from earning stable incomes and shaping decisions that affect their lives.
+            </p>
+          </div>
+          <div className="rounded-3xl overflow-hidden min-h-[280px] md:min-h-0">
+            <img src={problemImg} alt="Community members in Kibera" className="w-full h-full object-cover object-[center_25%]" />
+          </div>
+        </div>
+      </section>
+
 
       {/* Chain */}
       <section className="container-x py-16 md:py-24">
@@ -94,6 +112,37 @@ function ToC() {
           </div>
         </div>
       </section>
+
+      {/* Outcome banner image */}
+      <section className="container-x py-16 md:py-20">
+        <div className="grid lg:grid-cols-12 gap-10 items-center">
+          <div className="lg:col-span-6 rounded-3xl overflow-hidden aspect-[4/3]">
+            <img src={measureImg} alt="Library and learning space" className="w-full h-full object-cover" />
+          </div>
+          <div className="lg:col-span-6">
+            <p className="eyebrow mb-3">Long-term goal</p>
+            <h2 className="font-serif text-4xl md:text-5xl leading-tight">
+              Economically secure. Environmentally active. Locally represented.
+            </h2>
+            <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+              Sustained businesses, cleaner neighborhoods, and trained leaders influencing local decisions — together creating resilient households and healthier neighborhoods.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden">
+        <div className="relative h-[360px] md:h-[440px]">
+          <img src={outcomeImg} alt="WMAGE rally" className="absolute inset-0 w-full h-full object-cover object-[60%_center]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/55 to-transparent" />
+          <div className="relative container-x h-full flex items-center">
+            <blockquote className="font-serif text-3xl md:text-5xl text-white max-w-2xl leading-tight">
+              "United for equality, diversity and inclusion."
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
 
       <section className="container-x py-24 text-center">
         <h2 className="font-serif text-4xl md:text-5xl max-w-3xl mx-auto leading-tight">
