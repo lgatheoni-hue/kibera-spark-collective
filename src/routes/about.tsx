@@ -1,5 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import kibera from "../assets/about-kibera.jpg";
+import kibera from "../assets/photo-maktaba.jpg";
+import team6 from "../assets/photo-team-6.jpg";
+import team8 from "../assets/photo-team-8.jpg";
+import counselling from "../assets/photo-counselling-2.jpg";
+import community from "../assets/photo-community-3.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -26,8 +30,9 @@ function About() {
 
       <section className="container-x">
         <div className="rounded-3xl overflow-hidden">
-          <img src={kibera} alt="Kibera at golden hour" width={1600} height={900} loading="lazy" className="w-full h-[420px] md:h-[560px] object-cover" />
+          <img src={kibera} alt="WMAGE team gathered outside the Maktaba Resource Centre in Kibera" width={1600} height={900} loading="lazy" className="w-full h-[420px] md:h-[560px] object-cover object-[center_35%]" />
         </div>
+        <p className="mt-3 text-xs text-muted-foreground uppercase tracking-[0.18em]">Maktaba Resource Centre · Kibera</p>
       </section>
 
       <section className="container-x py-20 md:py-28 grid lg:grid-cols-2 gap-10 md:gap-16">
@@ -75,6 +80,24 @@ function About() {
           <p>
             Financial controls, transparent procurement, and regular public reporting ensure donor funds are used efficiently and for the intended outcomes.
           </p>
+        </div>
+      </section>
+
+      <section className="container-x pb-4">
+        <p className="eyebrow mb-6">The people of WMAGE</p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <figure className="aspect-[4/5] rounded-2xl overflow-hidden md:row-span-2 md:aspect-[4/5.2]">
+            <img src={team6} alt="WMAGE women leaders together at the resource centre" loading="lazy" className="w-full h-full object-cover" />
+          </figure>
+          <figure className="aspect-square rounded-2xl overflow-hidden">
+            <img src={counselling} alt="WMAGE team outside the counselling room" loading="lazy" className="w-full h-full object-cover" />
+          </figure>
+          <figure className="aspect-square rounded-2xl overflow-hidden">
+            <img src={community} alt="WMAGE members in the community" loading="lazy" className="w-full h-full object-cover object-[center_25%]" />
+          </figure>
+          <figure className="aspect-square rounded-2xl overflow-hidden col-span-2 md:col-span-2">
+            <img src={team8} alt="Three WMAGE members smiling outside the centre" loading="lazy" className="w-full h-full object-cover object-[center_30%]" />
+          </figure>
         </div>
       </section>
 

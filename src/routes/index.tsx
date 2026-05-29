@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import hero from "../assets/hero.jpg";
-import economic from "../assets/program-economic.jpg";
-import capacity from "../assets/program-capacity.jpg";
+import hero from "../assets/photo-rally.jpg";
+import economic from "../assets/photo-team-indoor.jpg";
+import capacity from "../assets/photo-library.jpg";
 import circular from "../assets/program-circular.jpg";
-import leadership from "../assets/program-leadership.jpg";
+import leadership from "../assets/photo-advocacy-signs.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -68,14 +68,14 @@ function Home() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-secondary">
               <img
                 src={hero}
-                alt="Women and youth at a WMAGE community workshop in Kibera"
+                alt="WMAGE members rallying on International Women's Day in Kibera, holding signs to stop gender-based violence"
                 width={1600}
                 height={1100}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-[60%_center]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/10 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 text-cream text-sm font-medium tracking-wide">
-                Co-designed. Locally led. Evidence driven.
+                International Women's Day · Kibera, 2024
               </div>
             </div>
           </div>
