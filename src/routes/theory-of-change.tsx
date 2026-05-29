@@ -35,6 +35,14 @@ function ToC() {
         </p>
       </section>
 
+      {/* Hero image */}
+      <section className="container-x pb-4">
+        <div className="rounded-3xl overflow-hidden aspect-[21/9]">
+          <img src={heroImg} alt="WMAGE advocates holding signs for equality and against gender-based violence" className="w-full h-full object-cover" />
+        </div>
+      </section>
+
+
       <section className="container-x pb-8">
         <div className="rounded-3xl bg-ink text-cream p-8 md:p-12">
           <p className="eyebrow mb-3" style={{ color: "var(--ochre)" }}>Problem statement</p>
