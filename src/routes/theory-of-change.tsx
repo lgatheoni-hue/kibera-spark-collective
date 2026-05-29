@@ -113,6 +113,37 @@ function ToC() {
         </div>
       </section>
 
+      {/* Outcome banner image */}
+      <section className="container-x py-16 md:py-20">
+        <div className="grid lg:grid-cols-12 gap-10 items-center">
+          <div className="lg:col-span-6 rounded-3xl overflow-hidden aspect-[4/3]">
+            <img src={measureImg} alt="Library and learning space" className="w-full h-full object-cover" />
+          </div>
+          <div className="lg:col-span-6">
+            <p className="eyebrow mb-3">Long-term goal</p>
+            <h2 className="font-serif text-4xl md:text-5xl leading-tight">
+              Economically secure. Environmentally active. Locally represented.
+            </h2>
+            <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+              Sustained businesses, cleaner neighborhoods, and trained leaders influencing local decisions — together creating resilient households and healthier neighborhoods.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden">
+        <div className="relative h-[360px] md:h-[440px]">
+          <img src={outcomeImg} alt="WMAGE rally" className="absolute inset-0 w-full h-full object-cover object-[60%_center]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/55 to-transparent" />
+          <div className="relative container-x h-full flex items-center">
+            <blockquote className="font-serif text-3xl md:text-5xl text-white max-w-2xl leading-tight">
+              "United for equality, diversity and inclusion."
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+
       <section className="container-x py-24 text-center">
         <h2 className="font-serif text-4xl md:text-5xl max-w-3xl mx-auto leading-tight">
           Want the targets, budget lines, and monitoring milestones?
