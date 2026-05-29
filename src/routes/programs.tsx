@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import economic from "../assets/program-economic.jpg";
-import capacity from "../assets/program-capacity.jpg";
+import economic from "../assets/photo-team-indoor.jpg";
+import capacity from "../assets/photo-library.jpg";
 import circular from "../assets/program-circular.jpg";
-import leadership from "../assets/program-leadership.jpg";
+import leadership from "../assets/photo-advocacy-signs.jpg";
 
 export const Route = createFileRoute("/programs")({
   head: () => ({
