@@ -1,4 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import heroImg from "../assets/photo-advocacy-signs.jpg";
+import problemImg from "../assets/photo-community-3.jpg";
+import measureImg from "../assets/photo-library.jpg";
+import outcomeImg from "../assets/photo-rally.jpg";
 
 export const Route = createFileRoute("/theory-of-change")({
   head: () => ({
