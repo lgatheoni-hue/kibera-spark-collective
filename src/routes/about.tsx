@@ -26,7 +26,8 @@ function About() {
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
           WMAGE was founded in 2024 by Kibera youth leaders who wanted practical, locally rooted solutions for women and young people facing unemployment, gender inequality, and environmental hazards.
         </p>
-      </section>
+          <img src={kibera} alt="WMAGE team gathered outside the Maktaba Resource Centre in Kibera" width={1600} height={900} loading="lazy" className="w-full h-[420px] md:h-[560px] object-cover object-[center_30%]" />
+          <p className="mt-3 text-xs text-muted-foreground uppercase tracking-[0.18em]">Maktaba Resource Centre · Kibera</p>
 
       <section className="container-x">
         <div className="rounded-3xl overflow-hidden">
