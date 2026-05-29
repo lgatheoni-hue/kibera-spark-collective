@@ -4,6 +4,11 @@ import economic from "../assets/photo-team-indoor.jpg";
 import capacity from "../assets/photo-library.jpg";
 import circular from "../assets/program-circular.jpg";
 import leadership from "../assets/photo-advocacy-signs.jpg";
+import community from "../assets/photo-community-3.jpg";
+import team6 from "../assets/photo-team-6.jpg";
+import team8 from "../assets/photo-team-8.jpg";
+import counselling from "../assets/photo-counselling-2.jpg";
+import maktaba from "../assets/photo-maktaba.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,88 +34,87 @@ const stats = [
   { value: "2024", label: "Founded by Kibera youth leaders" },
 ];
 
+const approach = [
+  { n: "01", t: "Listen", b: "We begin every program with community conversations to identify real barriers and real opportunities." },
+  { n: "02", t: "Co-design", b: "Curricula, microgrant cycles, and pilots are designed together with the women and youth who will lead them." },
+  { n: "03", t: "Deliver", b: "Cohort-based training paired with seed capital, mentorship, and direct market linkages." },
+  { n: "04", t: "Measure", b: "Baseline and endline data, monthly tracking, and beneficiary feedback so programs adapt to what works." },
+];
+
 function Home() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="container-x pt-10 md:pt-16 pb-16 md:pb-24 grid lg:grid-cols-12 gap-10 lg:gap-14 items-end">
-          <div className="lg:col-span-7 fade-up">
-            <p className="eyebrow mb-6">Kibera · Nairobi · Est. 2024</p>
-            <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
-              Skills that earn.
-              <br />
-              <span className="text-primary italic">Voices that lead.</span>
-              <br />
-              Change you can measure.
-            </h1>
-            <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-              WMAGE equips women and youth in Kibera with practical skills, income opportunities, and leadership — turning small investments into visible, lasting change.
-            </p>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Link
-                to="/contact"
-                className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
-              >
-                Request donor package
-                <span className="transition-transform group-hover:translate-x-1">→</span>
-              </Link>
-              <Link
-                to="/programs"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-foreground/20 hover:border-foreground/60 transition-colors"
-              >
-                Explore programs
-              </Link>
-            </div>
-          </div>
-
-          <div className="lg:col-span-5">
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-secondary">
-              <img
-                src={hero}
-                alt="WMAGE members rallying on International Women's Day in Kibera, holding signs to stop gender-based violence"
-                width={1600}
-                height={1100}
-                className="w-full h-full object-cover object-[60%_center]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/10 to-transparent" />
-              <div className="absolute bottom-5 left-5 right-5 text-cream text-sm font-medium tracking-wide">
-                International Women's Day · Kibera, 2024
+      {/* HERO — full-bleed dark image with overlay text (clean, like reference) */}
+      <section className="relative -mt-16 md:-mt-20">
+        <div className="relative h-[88vh] min-h-[600px] max-h-[860px] w-full overflow-hidden">
+          <img
+            src={hero}
+            alt="WMAGE members rallying on International Women's Day in Kibera"
+            className="absolute inset-0 w-full h-full object-cover object-[60%_center]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/65 to-ink/30" />
+          <div className="relative container-x h-full flex items-center pt-20">
+            <div className="max-w-3xl text-cream fade-up">
+              <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-cream/80 mb-6">
+                Kibera · Nairobi · Est. 2024
+              </p>
+              <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-tight text-white">
+                Empowering Women, <span style={{ color: "var(--ochre)" }}>Enriching</span> Communities
+              </h1>
+              <p className="mt-8 max-w-xl text-base md:text-lg text-cream/85 leading-relaxed">
+                WMAGE equips women and youth in Kibera with practical skills, income opportunities, and leadership — turning small investments into visible, lasting change.
+              </p>
+              <div className="mt-10 flex flex-wrap gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center px-7 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="/programs"
+                  className="inline-flex items-center px-7 py-3.5 rounded-full border border-white/40 text-white hover:bg-white/10 transition-colors font-medium"
+                >
+                  Explore Programs
+                </Link>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Marquee strip */}
-        <div className="border-y border-border bg-secondary/40 overflow-hidden">
-          <div className="container-x py-4 flex items-center gap-8 text-xs uppercase tracking-[0.18em] text-muted-foreground whitespace-nowrap overflow-x-auto">
-            <span>Economic Empowerment</span><span>·</span>
-            <span>Capacity Building</span><span>·</span>
-            <span>Circular Economy</span><span>·</span>
-            <span>Leadership Development</span><span>·</span>
-            <span className="text-primary">Earn · Lead · Transform</span>
-          </div>
-        </div>
       </section>
 
-      {/* SNAPSHOT */}
-      <section className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-10">
-        <div className="lg:col-span-5">
-          <p className="eyebrow mb-4">Quick snapshot</p>
-          <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-            Four linked priorities. <em>One accountable model.</em>
-          </h2>
+      {/* MARQUEE */}
+      <div className="border-b border-border bg-secondary/40">
+        <div className="container-x py-4 flex items-center gap-8 text-xs uppercase tracking-[0.18em] text-muted-foreground whitespace-nowrap overflow-x-auto">
+          <span>Economic Empowerment</span><span>·</span>
+          <span>Capacity Building</span><span>·</span>
+          <span>Circular Economy</span><span>·</span>
+          <span>Leadership Development</span><span>·</span>
+          <span className="text-primary">Earn · Lead · Transform</span>
         </div>
-        <div className="lg:col-span-7 text-lg text-muted-foreground leading-relaxed space-y-5">
-          <p>
-            WMAGE runs cohort-based training, seed funding cycles, waste-to-value pilots,
-            and leadership fellowships that move people from learning to earning — and from
-            civic awareness to civic influence.
+      </div>
+
+      {/* INTRO + IMAGE SPLIT */}
+      <section className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-5 order-2 lg:order-1">
+          <div className="aspect-[4/5] rounded-3xl overflow-hidden">
+            <img src={maktaba} alt="WMAGE team at Maktaba Resource Centre" className="w-full h-full object-cover" loading="lazy" />
+          </div>
+        </div>
+        <div className="lg:col-span-7 order-1 lg:order-2">
+          <p className="eyebrow mb-4">Who we are</p>
+          <h2 className="font-serif text-4xl md:text-5xl leading-tight">
+            A grassroots movement <em className="text-primary">rooted in Kibera.</em>
+          </h2>
+          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            WMAGE — Women in Monitoring and Advancing General Empowerment — was founded in 2024 by Kibera youth leaders. We run cohort-based training, seed funding cycles, waste-to-value pilots, and leadership fellowships.
           </p>
-          <p>
-            Every program is designed with clear indicators so donors see exactly how funds
-            translate into outcomes. We pair quantitative results with human stories.
+          <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+            Every program is designed with clear indicators so donors see exactly how funds translate into outcomes. We pair quantitative results with human stories.
           </p>
+          <Link to="/about" className="mt-8 inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all">
+            Learn more about us →
+          </Link>
         </div>
       </section>
 
@@ -141,18 +145,16 @@ function Home() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-          {programs.map((p, i) => (
+          {programs.map((p) => (
             <article
               key={p.title}
-              className={`group relative rounded-3xl overflow-hidden bg-card border border-border ${i % 3 === 0 ? "md:translate-y-6" : ""}`}
+              className="group relative rounded-3xl overflow-hidden bg-card border border-border hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={p.image}
                   alt={p.title}
                   loading="lazy"
-                  width={1200}
-                  height={900}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -165,12 +167,33 @@ function Home() {
         </div>
       </section>
 
+      {/* APPROACH */}
+      <section className="bg-secondary/40 border-y border-border">
+        <div className="container-x py-20 md:py-28">
+          <div className="max-w-2xl mb-14">
+            <p className="eyebrow mb-4">How we work</p>
+            <h2 className="font-serif text-4xl md:text-5xl leading-tight">
+              A simple, accountable approach.
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {approach.map((a) => (
+              <div key={a.n} className="bg-card border border-border rounded-2xl p-7 hover:border-primary/40 transition-colors">
+                <div className="font-serif text-3xl text-primary">{a.n}</div>
+                <h3 className="font-serif text-2xl mt-2">{a.t}</h3>
+                <p className="mt-3 text-muted-foreground leading-relaxed text-sm">{a.b}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* IMPACT */}
       <section className="bg-ink text-cream">
         <div className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-4">
             <p className="eyebrow mb-4" style={{ color: "var(--ochre)" }}>Impact in practice</p>
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight">
+            <h2 className="font-serif text-4xl md:text-5xl leading-tight text-white">
               Numbers, and the people behind them.
             </h2>
           </div>
@@ -183,8 +206,50 @@ function Home() {
         </div>
       </section>
 
+      {/* COMMUNITY GALLERY */}
+      <section className="container-x py-20 md:py-28">
+        <div className="flex items-end justify-between flex-wrap gap-6 mb-14">
+          <div>
+            <p className="eyebrow mb-4">Our community</p>
+            <h2 className="font-serif text-4xl md:text-5xl max-w-2xl leading-tight">
+              Faces, not figures.
+            </h2>
+          </div>
+          <Link to="/about" className="text-sm underline underline-offset-4 hover:text-primary">
+            Meet the team →
+          </Link>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <figure className="aspect-[3/4] rounded-2xl overflow-hidden">
+            <img src={team6} alt="WMAGE women leaders" loading="lazy" className="w-full h-full object-cover" />
+          </figure>
+          <figure className="aspect-[3/4] rounded-2xl overflow-hidden">
+            <img src={counselling} alt="WMAGE counselling team" loading="lazy" className="w-full h-full object-cover" />
+          </figure>
+          <figure className="aspect-[3/4] rounded-2xl overflow-hidden">
+            <img src={community} alt="WMAGE community members" loading="lazy" className="w-full h-full object-cover object-[center_25%]" />
+          </figure>
+          <figure className="aspect-[3/4] rounded-2xl overflow-hidden">
+            <img src={team8} alt="WMAGE team smiling" loading="lazy" className="w-full h-full object-cover object-[center_30%]" />
+          </figure>
+        </div>
+      </section>
+
+      {/* TESTIMONIAL */}
+      <section className="container-x pb-20 md:pb-28">
+        <figure className="rounded-[2rem] bg-secondary/50 border border-border p-10 md:p-16 text-center max-w-4xl mx-auto">
+          <p style={{ color: "var(--clay)" }} className="text-5xl font-serif leading-none mb-6">"</p>
+          <blockquote className="font-serif text-2xl md:text-3xl leading-snug text-foreground">
+            United for equality, diversity and inclusion. Empowering women — enriching democracy.
+          </blockquote>
+          <figcaption className="mt-8 text-sm uppercase tracking-[0.2em] text-muted-foreground">
+            WMAGE · International Women's Day 2024
+          </figcaption>
+        </figure>
+      </section>
+
       {/* PARTNER CTA */}
-      <section className="container-x py-24 md:py-32">
+      <section className="container-x pb-24 md:pb-32">
         <div className="rounded-[2rem] border border-border bg-card p-10 md:p-16 grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7">
             <p className="eyebrow mb-4">Get involved</p>
@@ -221,7 +286,7 @@ function Home() {
 function Impact({ title, body }: { title: string; body: string }) {
   return (
     <div className="border-t border-cream/15 pt-5">
-      <h3 className="font-serif text-2xl text-cream">{title}</h3>
+      <h3 className="font-serif text-2xl text-white">{title}</h3>
       <p className="mt-2 leading-relaxed">{body}</p>
     </div>
   );
