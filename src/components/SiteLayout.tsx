@@ -1,5 +1,6 @@
 import { Link, Outlet, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import logo from "../assets/logo.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -36,11 +37,9 @@ export function SiteLayout() {
         }`}
       >
         <div className="container-x flex items-center justify-between h-16 md:h-20">
-          <Link to="/" className="flex items-center gap-2 group">
-            <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary text-primary-foreground font-serif text-lg">
-              W
-            </span>
-            <span className="flex flex-col leading-none">
+          <Link to="/" className="flex items-center gap-3 group">
+            <img src={logo} alt="WMAGE logo" className="h-10 md:h-12 w-auto" />
+            <span className="hidden sm:flex flex-col leading-none">
               <span className="font-serif text-xl tracking-tight">WMAGE</span>
               <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-0.5">
                 Kibera · Nairobi
@@ -129,10 +128,8 @@ function Footer() {
     <footer className="mt-24 border-t border-border bg-secondary/40">
       <div className="container-x py-16 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary text-primary-foreground font-serif">
-              W
-            </span>
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="WMAGE logo" className="h-12 w-auto" />
             <span className="font-serif text-xl">WMAGE</span>
           </div>
           <p className="mt-4 text-sm text-muted-foreground max-w-sm leading-relaxed">
