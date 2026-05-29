@@ -44,13 +44,19 @@ function ToC() {
 
 
       <section className="container-x pb-8">
-        <div className="rounded-3xl bg-ink text-cream p-8 md:p-12">
-          <p className="eyebrow mb-3" style={{ color: "var(--ochre)" }}>Problem statement</p>
-          <p className="font-serif text-2xl md:text-3xl leading-snug max-w-4xl">
-            Persistent unemployment, entrenched gender inequality, and environmental hazards prevent women and youth in Kibera from earning stable incomes and shaping decisions that affect their lives.
-          </p>
+        <div className="grid md:grid-cols-2 gap-6 items-stretch">
+          <div className="rounded-3xl bg-ink text-cream p-8 md:p-12 flex flex-col justify-center">
+            <p className="eyebrow mb-3" style={{ color: "var(--ochre)" }}>Problem statement</p>
+            <p className="font-serif text-2xl md:text-3xl leading-snug">
+              Persistent unemployment, entrenched gender inequality, and environmental hazards prevent women and youth in Kibera from earning stable incomes and shaping decisions that affect their lives.
+            </p>
+          </div>
+          <div className="rounded-3xl overflow-hidden min-h-[280px] md:min-h-0">
+            <img src={problemImg} alt="Community members in Kibera" className="w-full h-full object-cover object-[center_25%]" />
+          </div>
         </div>
       </section>
+
 
       {/* Chain */}
       <section className="container-x py-16 md:py-24">
