@@ -83,6 +83,24 @@ function About() {
         </div>
       </section>
 
+      <section className="container-x pb-4">
+        <p className="eyebrow mb-6">The people of WMAGE</p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <figure className="aspect-[4/5] rounded-2xl overflow-hidden md:row-span-2 md:aspect-[4/5.2]">
+            <img src={team6} alt="WMAGE women leaders together at the resource centre" loading="lazy" className="w-full h-full object-cover" />
+          </figure>
+          <figure className="aspect-square rounded-2xl overflow-hidden">
+            <img src={counselling} alt="WMAGE team outside the counselling room" loading="lazy" className="w-full h-full object-cover" />
+          </figure>
+          <figure className="aspect-square rounded-2xl overflow-hidden">
+            <img src={community} alt="WMAGE members in the community" loading="lazy" className="w-full h-full object-cover object-[center_25%]" />
+          </figure>
+          <figure className="aspect-square rounded-2xl overflow-hidden col-span-2 md:col-span-2">
+            <img src={team8} alt="Three WMAGE members smiling outside the centre" loading="lazy" className="w-full h-full object-cover object-[center_30%]" />
+          </figure>
+        </div>
+      </section>
+
       <section className="container-x pb-24">
         <div className="grid md:grid-cols-2 gap-6">
           <Card title="History and roots" body="WMAGE grew from community conversations and lived experience. Founders who grew up in Kibera created locally led pilots that proved training plus market linkages works. Those pilots became today's programs — refined by monitoring data and community feedback." />
