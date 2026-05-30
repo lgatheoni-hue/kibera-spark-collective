@@ -8,8 +8,8 @@ import community from "../assets/photo-community-3.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About WMAGE — Locally led empowerment in Kibera" },
-      { name: "description", content: "Founded in 2024 by Kibera youth leaders, WMAGE works with the community as co-designers, trainers, and leaders." },
+      { title: "About WMAGE, a community based organization" },
+      { name: "description", content: "WMAGE partners with communities to co-create livelihoods, build leadership, and deliver measurable, transformational change." },
     ],
   }),
   component: About,
@@ -19,43 +19,40 @@ function About() {
   return (
     <>
       <section className="container-x pt-16 md:pt-24 pb-12">
-        <p className="eyebrow mb-6">About WMAGE</p>
         <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] max-w-4xl">
-          Rooted in Kibera. <span className="italic text-primary">Built by the community it serves.</span>
+          Built with the community. <span className="italic text-primary">Accountable to it.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          WMAGE was founded in 2024 by Kibera youth leaders who wanted practical, locally rooted solutions for women and young people facing unemployment, gender inequality, and environmental hazards.
+          WMAGE is a community based organization that moves past awareness into action. We co-create livelihoods, strengthen local capacity, and back leaders who can carry the work forward.
         </p>
       </section>
 
       <section className="container-x">
         <div className="rounded-3xl overflow-hidden">
-          <img src={kibera} alt="WMAGE team gathered outside the Maktaba Resource Centre in Kibera" width={1600} height={900} loading="lazy" className="w-full h-[420px] md:h-[560px] object-cover object-[center_35%]" />
+          <img src={kibera} alt="WMAGE team at the resource centre" width={1600} height={900} loading="lazy" className="w-full h-[420px] md:h-[560px] object-cover object-[center_35%]" />
         </div>
-        <p className="mt-3 text-xs text-muted-foreground uppercase tracking-[0.18em]">Maktaba Resource Centre · Kibera</p>
       </section>
 
       <section className="container-x py-20 md:py-28 grid lg:grid-cols-2 gap-10 md:gap-16">
-        <Block eyebrow="Vision" title="A Kibera where every woman and young person shapes their future.">
-          Skills, income, and voice combine into communities led by the people who live in them. We see a Kibera where opportunity is locally generated and locally held.
+        <Block title="A community where every person shapes their own future.">
+          Skills, income, and voice combine into communities led by the people who live in them. We see a future where opportunity is locally generated and locally held.
         </Block>
-        <Block eyebrow="Mission" title="Equip women and youth to earn, lead, and transform.">
-          Practical skills, income opportunities, and leadership pathways — designed with the community, delivered close to home, measured against real outcomes.
+        <Block title="Equip people to earn, lead, and transform.">
+          Practical pathways, designed alongside the community, delivered close to home, and measured against real outcomes.
         </Block>
       </section>
 
       <section className="bg-secondary/40 border-y border-border">
         <div className="container-x py-20 md:py-28">
-          <p className="eyebrow mb-4">Our values</p>
           <h2 className="font-serif text-4xl md:text-5xl max-w-3xl mb-14">
             Inclusivity, accountability, local ownership, evidence.
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { t: "Inclusivity", b: "We design for the women and youth most often left out of programs and decisions." },
-              { t: "Accountability", b: "Transparent finances, transparent decisions. Donors and beneficiaries see the same numbers." },
-              { t: "Local ownership", b: "Communities are co-designers — not recipients. Programs survive when they're already theirs." },
-              { t: "Evidence", b: "Baseline and endline data, monthly tracking, beneficiary feedback. Programs adapt to what works." },
+              { t: "Inclusivity", b: "We design for the people most often left out of programs and decisions." },
+              { t: "Accountability", b: "Transparent finances, transparent decisions. Partners and communities see the same numbers." },
+              { t: "Local ownership", b: "Communities are co-creators, not recipients. Programs survive when they already belong to them." },
+              { t: "Evidence", b: "Baselines, monthly tracking, and honest feedback. Programs adapt to what actually works." },
             ].map((v) => (
               <div key={v.t} className="bg-card border border-border rounded-2xl p-7">
                 <h3 className="font-serif text-2xl text-primary">{v.t}</h3>
@@ -68,47 +65,45 @@ function About() {
 
       <section className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-10">
         <div className="lg:col-span-5">
-          <p className="eyebrow mb-4">Team and governance</p>
           <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-            People from Kibera, supported by experts who back them.
+            People from the community, supported by experts who back them.
           </h2>
         </div>
         <div className="lg:col-span-7 space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>
-            Our core team is drawn from Kibera and includes program managers, trainers, community mobilizers, and monitoring specialists. An advisory board of development, finance, and technology experts provides strategic guidance.
+            Our core team includes program managers, trainers, community mobilizers, and monitoring specialists drawn from the communities we serve. An advisory board of development, finance, and technology experts provides strategic guidance.
           </p>
           <p>
-            Financial controls, transparent procurement, and regular public reporting ensure donor funds are used efficiently and for the intended outcomes.
+            Strong financial controls, transparent procurement, and regular public reporting make sure resources are used efficiently and for the outcomes they were intended for.
           </p>
         </div>
       </section>
 
       <section className="container-x pb-4">
-        <p className="eyebrow mb-6">The people of WMAGE</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           <figure className="aspect-[4/5] rounded-2xl overflow-hidden md:row-span-2 md:aspect-[4/5.2]">
-            <img src={team6} alt="WMAGE women leaders together at the resource centre" loading="lazy" className="w-full h-full object-cover" />
+            <img src={team6} alt="Women leaders together at the resource centre" loading="lazy" className="w-full h-full object-cover" />
           </figure>
           <figure className="aspect-square rounded-2xl overflow-hidden">
-            <img src={counselling} alt="WMAGE team outside the counselling room" loading="lazy" className="w-full h-full object-cover" />
+            <img src={counselling} alt="Team outside the counselling room" loading="lazy" className="w-full h-full object-cover" />
           </figure>
           <figure className="aspect-square rounded-2xl overflow-hidden">
-            <img src={community} alt="WMAGE members in the community" loading="lazy" className="w-full h-full object-cover object-[center_25%]" />
+            <img src={community} alt="Members in the community" loading="lazy" className="w-full h-full object-cover object-[center_25%]" />
           </figure>
           <figure className="aspect-square rounded-2xl overflow-hidden col-span-2 md:col-span-2">
-            <img src={team8} alt="Three WMAGE members smiling outside the centre" loading="lazy" className="w-full h-full object-cover object-[center_30%]" />
+            <img src={team8} alt="Members smiling outside the centre" loading="lazy" className="w-full h-full object-cover object-[center_30%]" />
           </figure>
         </div>
       </section>
 
       <section className="container-x pb-24">
         <div className="grid md:grid-cols-2 gap-6">
-          <Card title="History and roots" body="WMAGE grew from community conversations and lived experience. Founders who grew up in Kibera created locally led pilots that proved training plus market linkages works. Those pilots became today's programs — refined by monitoring data and community feedback." />
-          <Card title="Partnerships and accountability" body="We partner with local government, civil society, private sector buyers, and technology providers to expand market access and technical capacity. Donors receive quarterly progress reports, financial statements, and impact dashboards." />
+          <Card title="How we started" body="WMAGE grew out of community conversations and lived experience. Founders created locally led pilots that proved people learn fastest when they are doing the work and depending on it. Those pilots became today's programs, refined through monitoring data and community feedback." />
+          <Card title="How we stay accountable" body="We partner with local government, civil society, private sector buyers, and technology providers to expand market access and technical capacity. Partners receive quarterly progress reports, financial statements, and an annual impact summary." />
         </div>
         <div className="mt-12 text-center">
           <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
-            Visit us in Kibera →
+            Come and see the work →
           </Link>
         </div>
       </section>
@@ -116,10 +111,9 @@ function About() {
   );
 }
 
-function Block({ eyebrow, title, children }: { eyebrow: string; title: string; children: React.ReactNode }) {
+function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <p className="eyebrow mb-4">{eyebrow}</p>
       <h2 className="font-serif text-3xl md:text-4xl leading-tight">{title}</h2>
       <p className="mt-5 text-muted-foreground text-lg leading-relaxed">{children}</p>
     </div>

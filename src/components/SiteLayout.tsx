@@ -35,14 +35,8 @@ export function SiteLayout() {
         }`}
       >
         <div className="container-x flex items-center justify-between h-16 md:h-20">
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-3 group" aria-label="WMAGE home">
             <img src={logo} alt="WMAGE logo" className="h-10 md:h-12 w-auto" />
-            <span className="hidden sm:flex flex-col leading-none">
-              <span className="font-serif text-xl tracking-tight text-foreground">WMAGE</span>
-              <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-0.5">
-                Kibera · Nairobi
-              </span>
-            </span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">
@@ -135,9 +129,7 @@ function Footer() {
             <span className="font-serif text-2xl text-white">WMAGE</span>
           </div>
           <p className="mt-5 text-sm text-white/75 max-w-sm leading-relaxed">
-            Women in Monitoring and Advancing General Empowerment — a grassroots
-            organization equipping women and youth in Kibera to earn, lead, and
-            transform their community.
+            A community based organization advancing data driven, impact focused programs that turn local action into lasting transformation.
           </p>
         </div>
 
@@ -177,7 +169,7 @@ function Footer() {
       <div className="border-t border-white/15">
         <div className="container-x py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/60">
           <span>© {new Date().getFullYear()} WMAGE. All rights reserved.</span>
-          <span>Locally led. Evidence driven. Built in Kibera.</span>
+          <span>Locally led. Evidence driven. Built for transformation.</span>
         </div>
       </div>
     </footer>
