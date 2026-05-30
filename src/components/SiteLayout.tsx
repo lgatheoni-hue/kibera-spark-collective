@@ -129,9 +129,7 @@ function Footer() {
             <span className="font-serif text-2xl text-white">WMAGE</span>
           </div>
           <p className="mt-5 text-sm text-white/75 max-w-sm leading-relaxed">
-            Women in Monitoring and Advancing General Empowerment — a grassroots
-            organization equipping women and youth in Kibera to earn, lead, and
-            transform their community.
+            A community based organization advancing data driven, impact focused programs that turn local action into lasting transformation.
           </p>
         </div>
 
