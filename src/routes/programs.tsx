@@ -7,8 +7,8 @@ import leadership from "../assets/photo-advocacy-signs.jpg";
 export const Route = createFileRoute("/programs")({
   head: () => ({
     meta: [
-      { title: "Programs — WMAGE" },
-      { name: "description", content: "Cohort-based, time-bound programs that move participants from training to income and from awareness to action." },
+      { title: "Programs, WMAGE" },
+      { name: "description", content: "Locally co-created livelihoods, capacity building, circular economy, and civic leadership programs that move communities from awareness into action." },
     ],
   }),
   component: Programs,
@@ -19,49 +19,29 @@ const programs = [
     num: "01",
     title: "Economic Empowerment",
     image: economic,
-    lede: "Short vocational courses, financial literacy, business planning, microgrants, and buyer linkages.",
-    points: [
-      "Graduate with a viable business plan and seed capital",
-      "Introductions to local buyers and service providers",
-      "Designed to produce income within six months",
-      "Follow-on coaching for enterprises that scale",
-    ],
+    lede: "We partner with communities to co-create livelihood initiatives that are locally driven and community owned.",
+    body: "Together we identify income generating opportunities, co-design solutions, mobilize collective action, and provide the support needed to launch and grow sustainable, community owned enterprises, from farming and livestock projects to recycling and other viable local ventures. Skills and capacity are built on the job, so people learn while they earn and the work belongs to them from day one.",
   },
   {
     num: "02",
     title: "Capacity Building",
     image: capacity,
-    lede: "Digital literacy, basic AI awareness, organizational development, and training-of-trainers.",
-    points: [
-      "Boost employability with relevant digital skills",
-      "Improve local service delivery",
-      "Build resilient community institutions",
-      "Sustain activities beyond initial funding cycles",
-    ],
+    lede: "We strengthen the skills, leadership, and systems that let communities and local organizations drive their own development.",
+    body: "Through digital inclusion, practical technology skills, organizational strengthening, and local leadership development, communities build the capacity to solve challenges, deliver services, and sustain impact over the long term.",
   },
   {
     num: "03",
     title: "Circular Economy",
     image: circular,
-    lede: "Small recycling hubs, waste processing, product development, and market linkages for recycled goods.",
-    points: [
-      "Reduce environmental hazards in the neighborhood",
-      "Create green enterprises owned by women and youth",
-      "Diversify household income streams",
-      "Improve public health outcomes",
-    ],
+    lede: "We advance inclusive circular economy models that reduce waste, recover valuable resources, and create sustainable livelihoods.",
+    body: "By supporting community owned green enterprises and local value chains, we help build climate resilient economies that generate both environmental and economic benefits, turning what was once discarded into income and opportunity.",
   },
   {
     num: "04",
-    title: "Leadership Development",
+    title: "Leadership & Civic Engagement",
     image: leadership,
-    lede: "Mentorship, advocacy training, and civic placements that move trained leaders into local decision-making.",
-    points: [
-      "Practical training in governance and public speaking",
-      "Coaching in policy engagement",
-      "Placements on local committees",
-      "Support to lead community campaigns",
-    ],
+    lede: "We cultivate community leaders who can organize collective action, influence local decision making, and champion sustainable development.",
+    body: "Through mentorship, civic engagement, and practical leadership opportunities, community members become active drivers of positive change, taking seats at the tables where decisions about their lives are made.",
   },
 ];
 
@@ -69,14 +49,11 @@ function Programs() {
   return (
     <>
       <section className="container-x pt-16 md:pt-24 pb-16">
-        <p className="eyebrow mb-6">Our programs</p>
         <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] max-w-4xl">
-          From training to income.
-          <br />
-          <span className="italic text-primary">From awareness to action.</span>
+          From co-creation to <span className="italic text-primary">community owned impact.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          Cohort-based, time-bound, co-designed with local stakeholders and market actors. Baseline and endline data, monthly tracking, beneficiary feedback — so results are real and sustained.
+          Each program is co-designed with the people it serves, time bound, evidence driven, and built around learning by doing, so livelihoods, skills, and leadership grow together.
         </p>
       </section>
 
@@ -91,15 +68,8 @@ function Programs() {
             <div className="lg:col-span-6">
               <div className="font-serif text-5xl text-primary/40">{p.num}</div>
               <h2 className="font-serif text-4xl md:text-5xl leading-tight mt-2">{p.title}</h2>
-              <p className="mt-5 text-lg text-muted-foreground leading-relaxed">{p.lede}</p>
-              <ul className="mt-8 space-y-3">
-                {p.points.map((pt) => (
-                  <li key={pt} className="flex gap-3 text-foreground">
-                    <span className="mt-2.5 inline-block w-4 h-px bg-primary flex-shrink-0" />
-                    <span>{pt}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="mt-5 text-lg text-foreground leading-relaxed">{p.lede}</p>
+              <p className="mt-4 text-muted-foreground leading-relaxed">{p.body}</p>
             </div>
           </div>
         </section>
@@ -108,17 +78,15 @@ function Programs() {
       <section className="container-x py-24">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="rounded-3xl border border-border bg-card p-8 md:p-10">
-            <p className="eyebrow mb-3">Monitoring & sustainability</p>
             <h3 className="font-serif text-3xl">Tracked, learned, handed over.</h3>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Every program includes a monitoring plan, sustainability pathway, and community handover strategy. We track employment, income, business survival at 12 months, waste diverted, and leadership placements.
+              Every program ships with a monitoring plan, sustainability pathway, and a clear handover to the community. We track income, enterprise survival, waste recovered, and leaders placed in decision making roles.
             </p>
           </div>
           <div className="rounded-3xl border border-border bg-card p-8 md:p-10">
-            <p className="eyebrow mb-3">Who benefits</p>
-            <h3 className="font-serif text-3xl">Women 18–45. Youth 15–30.</h3>
+            <h3 className="font-serif text-3xl">Built with, not for.</h3>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Primary beneficiaries are women aged 18–45 and youth aged 15–30 in Kibera. Households, local markets, and municipal services benefit as trained participants create jobs, improve sanitation, and take civic roles.
+              Programs work because the people delivering them are the people who will own them. Co-creation is not a phase, it is the model, and it shapes every cohort, enterprise, and pilot we run.
             </p>
           </div>
         </div>
