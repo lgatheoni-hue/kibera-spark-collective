@@ -30,17 +30,15 @@ export function SiteLayout() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header
-        className={`sticky top-0 z-50 transition-all ${
-          scrolled
-            ? "backdrop-blur-md bg-background/85 border-b border-border"
-            : "bg-transparent"
+        className={`sticky top-0 z-50 transition-all bg-white ${
+          scrolled ? "shadow-sm border-b border-border" : "border-b border-border/60"
         }`}
       >
         <div className="container-x flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-3 group">
             <img src={logo} alt="WMAGE logo" className="h-10 md:h-12 w-auto" />
             <span className="hidden sm:flex flex-col leading-none">
-              <span className="font-serif text-xl tracking-tight">WMAGE</span>
+              <span className="font-serif text-xl tracking-tight text-foreground">WMAGE</span>
               <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-0.5">
                 Kibera · Nairobi
               </span>
@@ -54,20 +52,21 @@ export function SiteLayout() {
                 <Link
                   key={n.to}
                   to={n.to}
-                  className={`relative px-3 py-2 text-sm rounded-md transition-colors ${
+                  className={`relative px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                     active
-                      ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground"
+                      ? "text-primary"
+                      : "text-foreground/80 hover:text-primary"
                   }`}
                 >
                   {n.label}
                   {active && (
-                    <span className="absolute left-3 right-3 -bottom-0.5 h-px bg-primary" />
+                    <span className="absolute left-4 right-4 -bottom-0.5 h-0.5 rounded-full bg-primary" />
                   )}
                 </Link>
               );
             })}
           </nav>
+
 
           <div className="flex items-center gap-3">
             <Link
@@ -126,14 +125,16 @@ export function SiteLayout() {
 
 function Footer() {
   return (
-    <footer className="mt-24 border-t border-border bg-secondary/40">
+    <footer className="mt-24 bg-[var(--ink)] text-white">
       <div className="container-x py-16 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="WMAGE logo" className="h-12 w-auto" />
-            <span className="font-serif text-xl">WMAGE</span>
+            <div className="bg-white rounded-lg p-1.5">
+              <img src={logo} alt="WMAGE logo" className="h-10 w-auto" />
+            </div>
+            <span className="font-serif text-2xl text-white">WMAGE</span>
           </div>
-          <p className="mt-4 text-sm text-muted-foreground max-w-sm leading-relaxed">
+          <p className="mt-5 text-sm text-white/75 max-w-sm leading-relaxed">
             Women in Monitoring and Advancing General Empowerment — a grassroots
             organization equipping women and youth in Kibera to earn, lead, and
             transform their community.
@@ -141,13 +142,13 @@ function Footer() {
         </div>
 
         <div className="md:col-span-3">
-          <h4 className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-4">
+          <h4 className="text-xs uppercase tracking-[0.18em] text-white/60 mb-4">
             Explore
           </h4>
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-2.5 text-sm">
             {nav.map((n) => (
               <li key={n.to}>
-                <Link to={n.to} className="hover:text-primary transition-colors">
+                <Link to={n.to} className="text-white/85 hover:text-white transition-colors">
                   {n.label}
                 </Link>
               </li>
@@ -156,25 +157,25 @@ function Footer() {
         </div>
 
         <div className="md:col-span-4">
-          <h4 className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-4">
+          <h4 className="text-xs uppercase tracking-[0.18em] text-white/60 mb-4">
             Contact
           </h4>
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-2.5 text-sm">
             <li>
               <a
                 href="mailto:info@wimage.org.ke"
-                className="hover:text-primary transition-colors"
+                className="text-white/85 hover:text-white transition-colors"
               >
                 info@wimage.org.ke
               </a>
             </li>
-            <li className="text-muted-foreground">Kibera, Nairobi · Kenya</li>
-            <li className="text-muted-foreground">Founded 2024</li>
+            <li className="text-white/70">Kibera, Nairobi · Kenya</li>
+            <li className="text-white/70">Founded 2024</li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-border">
-        <div className="container-x py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
+      <div className="border-t border-white/15">
+        <div className="container-x py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/60">
           <span>© {new Date().getFullYear()} WMAGE. All rights reserved.</span>
           <span>Locally led. Evidence driven. Built in Kibera.</span>
         </div>
@@ -182,3 +183,4 @@ function Footer() {
     </footer>
   );
 }
+

@@ -45,35 +45,38 @@ function Home() {
   return (
     <>
       {/* HERO — full-bleed dark image with overlay text (clean, like reference) */}
-      <section className="relative -mt-16 md:-mt-20">
+      <section className="relative">
         <div className="relative h-[88vh] min-h-[600px] max-h-[860px] w-full overflow-hidden">
           <img
             src={hero}
             alt="WMAGE members rallying on International Women's Day in Kibera"
             className="absolute inset-0 w-full h-full object-cover object-[60%_center]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/65 to-ink/30" />
-          <div className="relative container-x h-full flex items-center pt-20">
-            <div className="max-w-3xl text-cream fade-up">
-              <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-cream/80 mb-6">
+          {/* Layered dark overlay for readable text */}
+          <div className="absolute inset-0 bg-black/55" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/25" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20" />
+          <div className="relative container-x h-full flex items-center">
+            <div className="max-w-3xl text-white fade-up">
+              <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-white/85 mb-6">
                 Kibera · Nairobi · Est. 2024
               </p>
               <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-tight text-white">
-                Empowering Women, <span style={{ color: "var(--ochre)" }}>Enriching</span> Communities
+                Empowering Women, <span style={{ color: "var(--ochre)" }} className="italic">Enriching</span> Communities
               </h1>
-              <p className="mt-8 max-w-xl text-base md:text-lg text-cream/85 leading-relaxed">
+              <p className="mt-8 max-w-xl text-base md:text-lg text-white/90 leading-relaxed">
                 WMAGE equips women and youth in Kibera with practical skills, income opportunities, and leadership — turning small investments into visible, lasting change.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center px-7 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium"
+                  className="inline-flex items-center px-7 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium shadow-lg shadow-primary/30"
                 >
                   Get Started
                 </Link>
                 <Link
                   to="/programs"
-                  className="inline-flex items-center px-7 py-3.5 rounded-full border border-white/40 text-white hover:bg-white/10 transition-colors font-medium"
+                  className="inline-flex items-center px-7 py-3.5 rounded-full border border-white/60 text-white hover:bg-white hover:text-primary transition-colors font-medium"
                 >
                   Explore Programs
                 </Link>
@@ -82,6 +85,7 @@ function Home() {
           </div>
         </div>
       </section>
+
 
       {/* MARQUEE */}
       <div className="border-b border-border bg-secondary/40">
