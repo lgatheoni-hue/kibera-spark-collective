@@ -169,7 +169,7 @@ function Footer() {
       <div className="border-t border-white/15">
         <div className="container-x py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/60">
           <span>© {new Date().getFullYear()} WMAGE. All rights reserved.</span>
-          <span>Locally led. Evidence driven. Built in Kibera.</span>
+          <span>Locally led. Evidence driven. Built for transformation.</span>
         </div>
       </div>
     </footer>
