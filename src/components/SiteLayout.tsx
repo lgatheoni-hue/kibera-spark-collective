@@ -35,14 +35,8 @@ export function SiteLayout() {
         }`}
       >
         <div className="container-x flex items-center justify-between h-16 md:h-20">
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-3 group" aria-label="WMAGE home">
             <img src={logo} alt="WMAGE logo" className="h-10 md:h-12 w-auto" />
-            <span className="hidden sm:flex flex-col leading-none">
-              <span className="font-serif text-xl tracking-tight text-foreground">WMAGE</span>
-              <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground mt-0.5">
-                Kibera · Nairobi
-              </span>
-            </span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">
