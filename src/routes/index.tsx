@@ -13,32 +13,41 @@ import maktaba from "../assets/photo-maktaba.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "WMAGE, Women in Monitoring and Advancing General Empowerment" },
-      { name: "description", content: "A community based organization advancing data driven programs, locally co-created livelihoods, and transformational leadership." },
+      { title: "WMAGE, Empowering Young Women, Strengthening Communities" },
+      { name: "description", content: "A youth-led community based organization co-creating livelihoods, leadership, and sustainable enterprises with young women and youth." },
     ],
   }),
   component: Home,
 });
 
 const programs = [
-  { title: "Economic Empowerment", image: economic, body: "Locally co-created livelihood initiatives, community owned enterprises, and learning on the job so skills and income grow together." },
-  { title: "Capacity Building", image: capacity, body: "Digital inclusion, practical technology skills, and organizational strengthening that let communities deliver and sustain their own impact." },
-  { title: "Circular Economy", image: circular, body: "Inclusive circular models, community owned green enterprises, and local value chains that link environmental and economic returns." },
-  { title: "Leadership & Civic Engagement", image: leadership, body: "Mentorship and civic pathways that turn community members into organizers, advocates, and active drivers of change." },
+  { title: "Economic Empowerment", image: economic, body: "We support young women and youths to build sustainable livelihoods through community enterprises and entrepreneurship capacity building." },
+  { title: "Capacity Building", image: capacity, body: "We strengthen the skills, systems, and tools needed to manage enterprises, access opportunities, and ensure sustainable livelihoods." },
+  { title: "Circular Economy", image: circular, body: "We support grassroot action to reduce waste by transforming it into enterprise opportunities through recycling, resource recovery, and green enterprise development." },
+  { title: "Community Leadership & Civic Engagement", image: leadership, body: "We support emerging leaders to participate in decision making, organize collective action, and advocate for community priorities." },
 ];
 
-const stats = [
-  { value: "Co-created", label: "Programs designed with, and owned by, the communities we serve" },
-  { value: "Action", label: "Beyond classrooms, livelihood depends on doing the work" },
-  { value: "Evidence", label: "Baselines, monthly tracking, and honest reporting" },
-  { value: "Transform", label: "Small investments turned into visible community change" },
+const values = [
+  { t: "Community Ownership", b: "Young women and community members help identify, design, lead, and sustain the initiatives they participate in." },
+  { t: "Action", b: "We believe people learn best by hands-on experience. Skills are developed through real work, real responsibility, and real opportunities." },
+  { t: "Accountability", b: "We listen, learn, implement and track progress to ensure resources create meaningful and transformative impact." },
+  { t: "Sustainability", b: "We focus on solutions that are local, scalable and proven to continue creating value long after a project funds ends." },
 ];
 
 const approach = [
-  { n: "01", t: "Listen", b: "We start with community conversations to surface real barriers and real opportunities." },
-  { n: "02", t: "Co-design", b: "Programs, enterprises, and pilots are designed alongside the people who will lead them." },
-  { n: "03", t: "Deliver", b: "Action first. People learn while doing the work, earning a return, and owning the outcome." },
-  { n: "04", t: "Measure", b: "Baseline data, monthly tracking, and beneficiary feedback so programs adapt to what works." },
+  { n: "01", t: "Listen", b: "It all begins by listening and understanding community needs, strengths, and aspirations." },
+  { n: "02", t: "Co-create", b: "We design the solutions alongside the people who will lead, and take ownership of them." },
+  { n: "03", t: "Act", b: "The solutions are put into practice through well structured and impact driven real initiatives." },
+  { n: "04", t: "Grow", b: "We strengthen successful models and support long-term sustainability and scalability." },
+];
+
+const successes = [
+  "Young women earning income through sustainable enterprises.",
+  "Stronger and more resilient households.",
+  "Community-owned businesses creating local opportunities.",
+  "Cleaner neighbourhoods through circular economy solutions.",
+  "Young women and youths taking active leadership roles.",
+  "Communities with the skills and confidence to shape their own future.",
 ];
 
 function Home() {
@@ -48,7 +57,7 @@ function Home() {
         <div className="relative h-[88vh] min-h-[600px] max-h-[860px] w-full overflow-hidden">
           <img
             src={hero}
-            alt="WMAGE members rallying for equality, diversity and inclusion"
+            alt="Young women and youth rallying together"
             className="absolute inset-0 w-full h-full object-cover object-[60%_center]"
           />
           <div className="absolute inset-0 bg-black/55" />
@@ -57,13 +66,13 @@ function Home() {
           <div className="relative container-x h-full flex items-center">
             <div className="max-w-3xl text-white fade-up">
               <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-white/85 mb-6">
-                Data driven · Community owned · Transformational
+                Youth-led · Community owned · Built for action
               </p>
               <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-tight text-white">
-                Empowering Women, <span style={{ color: "var(--ochre)" }} className="italic">Enriching</span> Communities
+                Empowering Young Women. <span style={{ color: "var(--ochre)" }} className="italic">Strengthening</span> Communities.
               </h1>
               <p className="mt-8 max-w-xl text-base md:text-lg text-white/90 leading-relaxed">
-                We partner with communities to co-create livelihoods, build leadership, and deliver measurable change that lasts beyond any single program.
+                We work with young women and youths to co-create meaningful livelihoods, build local leadership, and develop sustainable enterprises that generate real income and lasting impact.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link
@@ -94,6 +103,7 @@ function Home() {
         </div>
       </div>
 
+      {/* A Community Organization Built for Action */}
       <section className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 order-2 lg:order-1">
           <div className="aspect-[4/5] rounded-3xl overflow-hidden">
@@ -104,101 +114,139 @@ function Home() {
           <h2 className="font-serif text-4xl md:text-5xl leading-tight">
             A community organization built for <em className="text-primary">action.</em>
           </h2>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Many communities are already informed and many organizations have already trained them. WMAGE moves past awareness into doing. We co-create enterprises, support people while they run them, and measure the change as it happens.
+          <p className="mt-6 text-lg text-foreground leading-relaxed">
+            We believe sustainable change happens when communities lead it themselves.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            Every program ships with clear indicators, transparent finances, and an honest read of what is working, so partners see exactly how investment becomes outcome.
+            Many development programs end after training. We focus on what comes next. We work alongside young people in Kibera to help nurture and grow initiatives that create income, strengthen local networks, and address local community challenges.
           </p>
-          <Link to="/about" className="mt-8 inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all">
-            Learn more about us →
-          </Link>
+          <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+            Effective learning happens through active participation, ownership, and action.
+          </p>
         </div>
       </section>
 
-      <section className="container-x">
-        <div className="grid grid-cols-2 md:grid-cols-4 border-t border-border">
-          {stats.map((s) => (
-            <div key={s.label} className="py-10 px-2 border-b border-border md:border-r last:border-r-0 [&:nth-child(2)]:border-r-0 md:[&:nth-child(2)]:border-r">
-              <div className="font-serif text-4xl md:text-5xl text-primary">{s.value}</div>
-              <div className="mt-3 text-sm text-muted-foreground max-w-[22ch] leading-snug">{s.label}</div>
+      {/* From Ideas to Opportunities */}
+      <section className="bg-secondary/40 border-y border-border">
+        <div className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-7">
+            <h2 className="font-serif text-4xl md:text-5xl leading-tight">
+              From Ideas to <span className="italic text-primary">Opportunities.</span>
+            </h2>
+            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+              Young women and youths have the ambition, creativity, and potential to transform their communities. What is often missing is real opportunities to turn ideas into success, leadership, and lasting impact.
+            </p>
+            <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+              We work alongside young people to identify opportunities, design the program, outline collective responsibilities, and build community-owned solutions that create economic opportunities and strengthen their communities.
+            </p>
+            <Link to="/about" className="mt-8 inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all">
+              Learn more about us →
+            </Link>
+          </div>
+          <div className="lg:col-span-5">
+            <div className="aspect-[4/5] rounded-3xl overflow-hidden">
+              <img src={community} alt="Young people in the community" className="w-full h-full object-cover" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Work is Guided by */}
+      <section className="container-x py-20 md:py-28">
+        <div className="max-w-2xl mb-14">
+          <h2 className="font-serif text-4xl md:text-5xl leading-tight">Our work is guided by:</h2>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {values.map((v) => (
+            <div key={v.t} className="bg-card border border-border rounded-2xl p-7 hover:border-primary/40 transition-colors">
+              <h3 className="font-serif text-2xl text-primary">{v.t}</h3>
+              <p className="mt-3 text-muted-foreground leading-relaxed text-sm">{v.b}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="container-x py-20 md:py-28">
-        <div className="flex items-end justify-between flex-wrap gap-6 mb-14">
-          <h2 className="font-serif text-4xl md:text-5xl max-w-2xl leading-tight">
-            Four programs, one accountable model.
-          </h2>
-          <Link to="/programs" className="text-sm underline underline-offset-4 hover:text-primary">
-            See all programs →
-          </Link>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-          {programs.map((p) => (
-            <article
-              key={p.title}
-              className="group relative rounded-3xl overflow-hidden bg-card border border-border hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all"
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={p.image}
-                  alt={p.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-7">
-                <h3 className="font-serif text-2xl">{p.title}</h3>
-                <p className="mt-3 text-muted-foreground leading-relaxed">{p.body}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
+      {/* Four Areas of Impact */}
       <section className="bg-secondary/40 border-y border-border">
         <div className="container-x py-20 md:py-28">
-          <div className="max-w-2xl mb-14">
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-              A simple, accountable approach.
+          <div className="flex items-end justify-between flex-wrap gap-6 mb-14">
+            <h2 className="font-serif text-4xl md:text-5xl max-w-2xl leading-tight">
+              Our four areas of impact.
             </h2>
+            <Link to="/programs" className="text-sm underline underline-offset-4 hover:text-primary">
+              See all programs →
+            </Link>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {approach.map((a) => (
-              <div key={a.n} className="bg-card border border-border rounded-2xl p-7 hover:border-primary/40 transition-colors">
-                <div className="font-serif text-3xl text-primary">{a.n}</div>
-                <h3 className="font-serif text-2xl mt-2">{a.t}</h3>
-                <p className="mt-3 text-muted-foreground leading-relaxed text-sm">{a.b}</p>
-              </div>
+
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            {programs.map((p) => (
+              <article
+                key={p.title}
+                className="group relative rounded-3xl overflow-hidden bg-card border border-border hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all"
+              >
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-7">
+                  <h3 className="font-serif text-2xl">{p.title}</h3>
+                  <p className="mt-3 text-muted-foreground leading-relaxed">{p.body}</p>
+                </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
+      {/* How We Work */}
+      <section className="container-x py-20 md:py-28">
+        <div className="max-w-2xl mb-14">
+          <h2 className="font-serif text-4xl md:text-5xl leading-tight">How we work.</h2>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {approach.map((a) => (
+            <div key={a.n} className="bg-card border border-border rounded-2xl p-7 hover:border-primary/40 transition-colors">
+              <div className="font-serif text-3xl text-primary">{a.n}</div>
+              <h3 className="font-serif text-2xl mt-2">{a.t}</h3>
+              <p className="mt-3 text-muted-foreground leading-relaxed text-sm">{a.b}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* What Success Looks Like */}
       <section className="bg-ink text-cream">
         <div className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-10">
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-5">
             <h2 className="font-serif text-4xl md:text-5xl leading-tight text-white">
-              Numbers, and the people behind them.
+              What success looks like.
             </h2>
+            <p className="mt-5 text-cream/80 leading-relaxed">
+              The change we are working towards, made visible in everyday life.
+            </p>
           </div>
-          <div className="lg:col-span-8 grid sm:grid-cols-2 gap-x-10 gap-y-8 text-cream/85">
-            <Impact title="Livelihoods that hold" body="Community owned enterprises generate steady income because participants learn the work by running it." />
-            <Impact title="Households gain stability" body="Families report more predictable income and a stronger ability to plan, save, and invest." />
-            <Impact title="Cleaner, greener neighborhoods" body="Circular economy hubs divert waste, recover value, and create local green jobs." />
-            <Impact title="Leaders who show up" body="Trained community members take active roles on committees, campaigns, and local decision tables." />
+          <div className="lg:col-span-7">
+            <ul className="space-y-5">
+              {successes.map((s) => (
+                <li key={s} className="flex gap-4 border-t border-cream/15 pt-5">
+                  <span className="mt-2.5 inline-block w-5 h-px bg-[var(--ochre)] flex-shrink-0" />
+                  <span className="text-lg text-white/90 leading-relaxed">{s}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
+      {/* Partners Not Beneficiaries */}
       <section className="container-x py-20 md:py-28">
         <div className="flex items-end justify-between flex-wrap gap-6 mb-14">
           <h2 className="font-serif text-4xl md:text-5xl max-w-2xl leading-tight">
-            Faces, not figures.
+            Partners, not beneficiaries.
           </h2>
           <Link to="/about" className="text-sm underline underline-offset-4 hover:text-primary">
             Meet the team →
@@ -206,10 +254,10 @@ function Home() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           <figure className="aspect-[3/4] rounded-2xl overflow-hidden">
-            <img src={team6} alt="Women leaders together" loading="lazy" className="w-full h-full object-cover" />
+            <img src={team6} alt="Young women leaders together" loading="lazy" className="w-full h-full object-cover" />
           </figure>
           <figure className="aspect-[3/4] rounded-2xl overflow-hidden">
-            <img src={counselling} alt="Counselling and support team" loading="lazy" className="w-full h-full object-cover" />
+            <img src={counselling} alt="Community engagement" loading="lazy" className="w-full h-full object-cover" />
           </figure>
           <figure className="aspect-[3/4] rounded-2xl overflow-hidden">
             <img src={community} alt="Community members" loading="lazy" className="w-full h-full object-cover object-[center_25%]" />
@@ -220,55 +268,38 @@ function Home() {
         </div>
       </section>
 
-      <section className="container-x pb-20 md:pb-28">
-        <figure className="rounded-[2rem] bg-secondary/50 border border-border p-10 md:p-16 text-center max-w-4xl mx-auto">
-          <p style={{ color: "var(--clay)" }} className="text-5xl font-serif leading-none mb-6">"</p>
-          <blockquote className="font-serif text-2xl md:text-3xl leading-snug text-foreground">
-            United for equality, diversity and inclusion. Empowering women, enriching democracy.
-          </blockquote>
-          <figcaption className="mt-8 text-sm uppercase tracking-[0.2em] text-muted-foreground">
-            WMAGE community
-          </figcaption>
-        </figure>
-      </section>
-
+      {/* CTA */}
       <section className="container-x pb-24 md:pb-32">
         <div className="rounded-[2rem] border border-border bg-card p-10 md:p-16 grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7">
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-              Let's build something <span className="text-primary italic">lasting, together.</span>
+              Let's build something <span className="text-primary italic">lasting.</span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg max-w-xl leading-relaxed">
-              We welcome partners who want to walk alongside communities, not just fund them. Whether you bring resources, expertise, or curiosity, there is a place for you in this work.
+              We welcome like minded partners who believe in community first, local leadership, and practical action.
+            </p>
+            <p className="mt-4 text-muted-foreground text-lg max-w-xl leading-relaxed">
+              Whether you bring resources, expertise, networks, or ideas, we would love to explore how we can work together to create opportunities for young people and strengthen communities.
             </p>
           </div>
           <div className="lg:col-span-5 flex flex-col gap-3">
-            <a
-              href="mailto:info@wimage.org.ke"
-              className="inline-flex items-center justify-between gap-3 px-6 py-5 rounded-2xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
-            >
-              <span className="font-medium">info@wimage.org.ke</span>
-              <span>→</span>
-            </a>
             <Link
               to="/contact"
-              className="inline-flex items-center justify-between gap-3 px-6 py-5 rounded-2xl border border-border hover:border-foreground/50 transition-colors"
+              className="inline-flex items-center justify-between gap-3 px-6 py-5 rounded-2xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
             >
-              <span>Start a conversation</span>
+              <span className="font-medium">Start a conversation</span>
               <span>→</span>
             </Link>
+            <a
+              href="mailto:info@wimage.org.ke"
+              className="inline-flex items-center justify-between gap-3 px-6 py-5 rounded-2xl border border-border hover:border-foreground/50 transition-colors"
+            >
+              <span>info@wimage.org.ke</span>
+              <span>→</span>
+            </a>
           </div>
         </div>
       </section>
     </>
-  );
-}
-
-function Impact({ title, body }: { title: string; body: string }) {
-  return (
-    <div className="border-t border-cream/15 pt-5">
-      <h3 className="font-serif text-2xl text-white">{title}</h3>
-      <p className="mt-2 leading-relaxed">{body}</p>
-    </div>
   );
 }
