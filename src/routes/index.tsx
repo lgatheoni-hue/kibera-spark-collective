@@ -54,27 +54,26 @@ function Home() {
   return (
     <>
       <section className="relative">
-        <div className="relative h-[88vh] min-h-[600px] max-h-[860px] w-full overflow-hidden">
+        <div className="relative min-h-[620px] h-[calc(100vh-80px)] max-h-[820px] w-full overflow-hidden">
           <img
             src={hero}
             alt="Young women and youth rallying together"
-            className="absolute inset-0 w-full h-full object-cover object-[60%_center]"
+            className="absolute inset-0 w-full h-full object-cover object-[65%_center]"
           />
           <div className="absolute inset-0 bg-black/55" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/25" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20" />
-          <div className="relative container-x h-full flex items-center">
-            <div className="max-w-3xl text-white fade-up">
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/20" />
+          <div className="relative h-full w-full px-6 sm:px-10 lg:px-16 xl:px-24 flex items-center">
+            <div className="text-white fade-up max-w-[640px] xl:max-w-[720px]">
               <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-white/85 mb-6">
                 Youth-led · Community owned · Built for action
               </p>
-              <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-tight text-white">
-                Empowering Young Women. <span style={{ color: "var(--ochre)" }} className="italic">Strengthening</span> Communities.
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5rem] leading-[1.05] tracking-tight text-white">
+                Empowering Young Women. <span className="italic text-primary">Strengthening</span> Communities.
               </h1>
-              <p className="mt-8 max-w-xl text-base md:text-lg text-white/90 leading-relaxed">
+              <p className="mt-7 max-w-xl text-base md:text-lg text-white/90 leading-relaxed">
                 We work with young women and youths to co-create meaningful livelihoods, build local leadership, and develop sustainable enterprises that generate real income and lasting impact.
               </p>
-              <div className="mt-10 flex flex-wrap gap-4">
+              <div className="mt-9 flex flex-wrap gap-4">
                 <Link
                   to="/contact"
                   className="inline-flex items-center px-7 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium shadow-lg shadow-primary/30"
