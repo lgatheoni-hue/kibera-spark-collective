@@ -16,31 +16,31 @@ export const Route = createFileRoute("/about")({
 });
 
 const values = [
-  { t: "Community Ownership", b: "We believe that the people most affected by a challenge should help shape the solution." },
-  { t: "Action", b: "We believe experience is one of the most powerful ways to learn and grow and leave an impact." },
-  { t: "Accountability", b: "We are committed to transparency, responsible stewardship of resources, and honest reporting." },
-  { t: "Inclusion", b: "We create opportunities for young women and youth whose voices are often underrepresented in decision making processes." },
-  { t: "Sustainability", b: "We invest in solutions that continue to scale and create value long after initial support has ended." },
+  { t: "Community Ownership", b: "The people most affected by a challenge are best placed to help shape its solution." },
+  { t: "Action", b: "Lived experience is one of the most powerful ways people learn, grow, and create lasting impact." },
+  { t: "Accountability", b: "We are committed to transparency, the responsible stewardship of every resource entrusted to us, and honest reporting." },
+  { t: "Inclusion", b: "We create space for the voices of young women and youth who are too often left out of decision-making." },
+  { t: "Sustainability", b: "We invest in solutions built to keep creating value long after a project or grant cycle has ended." },
 ];
 
 type Person = { name: string; role: string; bio: string };
 
 const board: Person[] = [
-  { name: "Princess Rogelyne", role: "Chairperson", bio: "Chairperson of the WIMAGE board, providing strategic leadership and championing community-driven development." },
-  { name: "Patrick Kiarie", role: "Secretary", bio: "Board Secretary supporting governance, documentation, and continuity across WIMAGE's work." },
-  { name: "Lucy Wangui", role: "Treasurer", bio: "Treasurer overseeing financial stewardship, transparent reporting, and responsible use of resources." },
-  { name: "Marion Stetcy", role: "Partnerships", bio: "Board member leading partnership strategy and stakeholder engagement." },
-  { name: "Pascal Nabwana", role: "Impact & Sustainability", bio: "Board member guiding impact, monitoring, and long-term sustainability of community programs." },
+  { name: "Princess Rogelyne", role: "Board Chairperson", bio: "Chairperson of the WIMAGE board, providing strategic leadership and championing community-driven development." },
+  { name: "Patrick Kiarie", role: "Board Secretary", bio: "Board Secretary supporting governance, documentation, and continuity across WIMAGE's work." },
+  { name: "Lucy Wangui", role: "Board Treasurer", bio: "Treasurer overseeing financial stewardship, transparent reporting, and responsible use of resources." },
+  { name: "Marion Stetcy", role: "Board Member, Partnerships", bio: "Board member leading partnership strategy and stakeholder engagement." },
+  { name: "Pascal Nabwana", role: "Board Member, Impact & Sustainability", bio: "Board member guiding impact, monitoring, and long-term sustainability of community programmes." },
 ];
 
 const secretariat: Person[] = [
-  { name: "Patrick Kiarie", role: "Executive Director", bio: "Leads day-to-day operations, strategic direction, and partnerships across WIMAGE programs." },
+  { name: "Patrick Kiarie", role: "Executive Director", bio: "Leads day-to-day operations, strategic direction, and partnerships across WIMAGE programmes." },
   { name: "Gerry Obiero", role: "Finance Director", bio: "Oversees financial planning, controls, and compliance to ensure resources deliver intended impact." },
-  { name: "Diana Mirina", role: "Programs Coordinator", bio: "Coordinates program design, implementation, and community engagement across all initiatives." },
+  { name: "Agness Muteti", role: "Programmes Coordinator", bio: "Coordinates programme design, implementation, and community engagement across all initiatives." },
   { name: "Pauline Wambui", role: "Communications Officer", bio: "Leads storytelling, brand voice, and community communications across digital and print." },
-  { name: "Mary Njoki", role: "Impact, M&E Officer", bio: "Designs monitoring frameworks, tracks outcomes, and translates evidence into program learning." },
-  { name: "Gabriel Suter", role: "Field Officer", bio: "Works directly with community groups, supporting implementation and field-level coordination." },
-  { name: "Veronicah Wanjiru", role: "Fundraising & Partnership", bio: "Builds funding pipelines, partner relationships, and resource mobilization for community programs." },
+  { name: "Baraka Munene", role: "Impact, Monitoring & Evaluation Officer", bio: "Designs monitoring frameworks, tracks outcomes, and translates evidence into programme learning." },
+  { name: "Kevin Kamuyu", role: "Field Officer", bio: "Works directly with community groups, supporting implementation and field-level coordination." },
+  { name: "Veronicah Wanjiru", role: "Fundraising & Partnerships", bio: "Builds funding pipelines, partner relationships, and resource mobilisation for community programmes." },
 ];
 
 function About() {
@@ -48,13 +48,13 @@ function About() {
     <>
       <section className="container-x pt-16 md:pt-24 pb-12">
         <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] max-w-4xl">
-          Built with communities. <span className="italic text-primary">Driven by young energy.</span>
+          Built with communities. <span className="italic text-primary">Led by young people.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          WIMAGE is a youth-led community based organization working with young people in Kibera to create sustainable livelihoods, strengthen local enterprises, and support community-driven development.
+          WIMAGE is a youth-led, community-based organisation working with young people in Kibera to build sustainable livelihoods, strengthen local enterprises, and support community-driven development.
         </p>
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          We believe the people closest to community challenges are also closest to the solutions. Our role is to support them to turn their solutions into action, build practical opportunities, and create impact they can own and sustain.
+          We believe the people closest to a community's challenges are also closest to its solutions. Our role is to walk alongside them, helping turn their own solutions into action, building practical pathways to opportunity, and supporting impact that communities can own and sustain for themselves.
         </p>
       </section>
 
@@ -67,10 +67,10 @@ function About() {
       {/* Vision & Mission */}
       <section className="container-x py-20 md:py-28 grid lg:grid-cols-2 gap-10 md:gap-16">
         <Block title="Our Vision">
-          A community where young people have access to opportunity, a sense of belonging, and the ability to shape their own futures.
+          A community where young people have access to opportunity, a genuine sense of belonging, and the agency to shape their own future.
         </Block>
         <Block title="Our Mission">
-          To work with young people to co-create sustainable solutions, strengthen community leadership, and build inclusive local economies.
+          To work alongside young people to co-create sustainable solutions, strengthen community leadership, and build inclusive local economies.
         </Block>
       </section>
 
@@ -82,16 +82,16 @@ function About() {
           </div>
           <div className="lg:col-span-7 space-y-5 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Young people are full of ideas, energy, and potential. Yet despite being the majority, many continue to face barriers to employment, leadership opportunities, and meaningful participation in community development.
+              Young people in Kibera carry ideas, energy, and deep local knowledge. Yet despite making up the majority of the population, many continue to face real barriers to employment, leadership, and meaningful participation in decisions about their own community.
             </p>
             <p>
-              Too often, support focuses on awareness and training without creating clear and practical pathways for action.
+              Too often, support stops at awareness and training, without building the practical pathways young people need to act on what they have learned.
             </p>
             <p>
-              WIMAGE was founded on a simple belief: lasting change happens when people have the opportunity to apply their skills, generate income, and lead solutions within their own communities.
+              WIMAGE was founded on a simple conviction: change lasts when people have the opportunity to apply their skills, earn an income, and lead solutions within their own community.
             </p>
             <p>
-              We exist to support young people and create the pathways they need to move beyond participation and become active contributors to local realization of sustainable development.
+              We exist to build those pathways, helping young people move from participation to genuine, sustained contribution to their community's development.
             </p>
           </div>
         </div>
@@ -109,16 +109,16 @@ function About() {
             What makes WIMAGE <span className="italic text-primary">different.</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Many focus on delivering activities, we focus on helping communities build something transformational that lasts.
+            Many organisations focus on delivering activities. We focus on helping communities build something that outlasts any single project.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
             Our approach is rooted in community ownership, practical action, and long-term sustainability.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            We work alongside young women and youths to identify and evaluate opportunities, co-create solutions, and support initiatives as they grow. Learning happens through participation, responsibility, and real-world experience.
+            We work alongside young women and youth to identify and weigh up opportunities, co-create solutions, and stay engaged as initiatives grow. Learning happens through participation, shared responsibility, and lived experience, not in a classroom alone.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            Communities are not beneficiaries of our work. They are partners and central in our success.
+            Communities are not the audience for our work. They are our partners, and their leadership is central to whatever success we achieve together.
           </p>
         </div>
       </section>
@@ -145,13 +145,13 @@ function About() {
         </div>
         <div className="lg:col-span-7 space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>
-            WIMAGE is led by a team passionate about women and youth empowerment and deeply connected to the communities we serve.
+            WIMAGE is led by a team committed to women and youth empowerment, and deeply rooted in the communities we serve.
           </p>
           <p>
-            Our team brings together a diverse mix of expertise in community enterprises management, community engagement, circular economy entrepreneurship, community leadership, and organizational management.
+            Our team brings together expertise in community enterprise management, community engagement, circular economy entrepreneurship, community leadership, and organisational management.
           </p>
           <p>
-            WIMAGE is governed by a team of board members, a secretariat, and a pool of volunteers and local partners who contribute technical expertise, mentorship pathways, and strategic guidance.
+            WIMAGE is governed by a Board of Directors, supported by a Secretariat and a network of volunteers and local partners who contribute technical expertise, mentorship, and strategic guidance.
           </p>
         </div>
       </section>
@@ -178,10 +178,10 @@ function About() {
           </div>
           <div className="lg:col-span-7 space-y-5 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Trust is built through accountability, and achieving the stipulated results and impact. We use clear systems for financial management, project implementation, and impact tracking. We are also very keen to regularly engage communities, partners, and stakeholders to gather feedback, share progress, and improve our work.
+              Trust is earned through accountability and through delivering the results we set out to achieve. We maintain clear systems for financial management, programme implementation, and impact tracking, and we engage communities, partners, and stakeholders regularly to gather feedback, share progress openly, and improve our work.
             </p>
             <p>
-              By combining local knowledge with evidence-informed program design, we ensure that resources are used responsibly and effectively for transformative impact.
+              By combining local knowledge with evidence-informed programme design, we ensure that every resource entrusted to us is used responsibly and directed toward lasting impact.
             </p>
           </div>
         </div>
@@ -192,10 +192,10 @@ function About() {
         <div className="lg:col-span-7">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight">Looking ahead.</h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Our ambition is to build a future where more young women and youth have access to opportunities, stronger support networks, and meaningful economic pathways.
+            Our ambition is a future where more young women and youth have access to opportunity, stronger support networks, and durable economic pathways.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            As we grow, we remain committed to the principles that shaped our beginning: community ownership, practical action, and lasting impact.
+            As we grow, we remain anchored to the principles that shaped our founding: community ownership, practical action, and impact that lasts.
           </p>
         </div>
         <div className="lg:col-span-5">
@@ -212,7 +212,7 @@ function About() {
             Come and see the work.
           </h2>
           <p className="mt-5 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            We welcome partners, supporters, and community members who want to learn more about what we do, how we do it, and how you can support.
+            We welcome partners, supporters, and community members who want to see what we do and how we do it, and to explore how you might be part of it.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
@@ -222,7 +222,7 @@ function About() {
               Book a site visit, partner with us →
             </Link>
             <Link to="/programs" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-foreground/20 hover:border-foreground/60 transition-colors">
-              Learn more about our programs →
+              Learn more about our programmes →
             </Link>
           </div>
         </div>
