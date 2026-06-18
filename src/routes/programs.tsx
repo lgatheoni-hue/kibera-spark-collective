@@ -19,44 +19,44 @@ const programs = [
     num: "01",
     title: "Economic Empowerment",
     image: economic,
-    lede: "We support young women and youth to create sustainable livelihoods by developing enterprises that generate income, create jobs, and respond to local community needs.",
+    lede: "We support young women and youth to build sustainable livelihoods by developing enterprises that generate income, create jobs, and respond to needs identified by their own community.",
     paragraphs: [
-      "Rather than focusing only on entrepreneurship training, we help participants identify viable economic opportunities, organize themselves into groups, test business ideas, and establish income-generating ventures.",
-      "Participants gain practical experience in planning, production, marketing, customer engagement, and enterprise management while generating real income from their activities.",
-      "The goal is not simply to start businesses, but to build enterprises that can grow, create employment, and strengthen local economies.",
+      "Rather than offering entrepreneurship training alone, we help participants identify viable economic opportunities, organise into groups, test ideas, and establish income-generating ventures grounded in local demand.",
+      "Participants gain hands-on experience in planning, production, marketing, customer engagement, and enterprise management, while generating real income from their work.",
+      "Our aim is not simply to help people start businesses, but to build enterprises that create employment and strengthen the local economy around them.",
     ],
   },
   {
     num: "02",
-    title: "Capacity Building",
+    title: "Capacity Strengthening",
     image: capacity,
-    lede: "Strong enterprises and community initiatives require more than motivation. They require the skills, systems, and confidence needed to manage growth and navigate challenges.",
+    lede: "Strong enterprises and community initiatives need more than motivation. They need the skills, systems, and confidence to manage growth and navigate setbacks.",
     paragraphs: [
-      "Our capacity building work focuses on strengthening the practical capabilities that help individuals and groups succeed.",
-      "Rather than delivering one-off workshops, we integrate learning into ongoing initiatives so participants can immediately apply new knowledge to real situations. This creates a continuous learning process where skills are reinforced through practice and experience.",
-      "By strengthening both individual capabilities and organizational systems, we help communities build the foundation needed for long-term success.",
+      "Our capacity-strengthening work builds the practical capabilities that help individuals and groups succeed.",
+      "Rather than one-off workshops, we embed learning within ongoing initiatives so participants can apply new knowledge immediately to real situations, reinforcing skills through practice, not theory alone.",
+      "By strengthening both individual capability and organisational systems, we help communities build the foundation they need for long-term success.",
     ],
   },
   {
     num: "03",
     title: "Circular Economy",
     image: circular,
-    lede: "Many communities often face environmental challenges that are viewed as problems. We see many of these challenges as opportunities for young people.",
+    lede: "Many communities face environmental challenges that are too often seen only as problems. We see many of these same challenges as opportunities for young people.",
     paragraphs: [
-      "Our circular economy initiatives help young women and youth recover value from materials that would otherwise be discarded.",
-      "We support communities to identify market opportunities linked to environmental action, develop products and services from otherwise waste materials, and build enterprises that contribute to cleaner and healthier living environments.",
-      "This approach creates a direct connection between environmental stewardship and economic opportunity, allowing communities to generate livelihoods while addressing local environmental concerns.",
+      "Our circular economy work helps young women and youth recover value from materials that would otherwise be discarded.",
+      "We support communities to identify market opportunities linked to environmental action, develop products and services from waste materials, and build enterprises that contribute to cleaner, healthier neighbourhoods.",
+      "This work creates a direct link between environmental stewardship and economic opportunity, allowing communities to build livelihoods while addressing the environmental concerns they live with every day.",
     ],
   },
   {
     num: "04",
     title: "Community Leadership & Civic Engagement",
     image: leadership,
-    lede: "Community development requires people who are willing and able to organize others, make informed decisions, and advocate for community priorities.",
+    lede: "Community development needs people who are willing and equipped to organise others, make informed decisions, and advocate for their community's priorities.",
     paragraphs: [
       "Our leadership and civic engagement work supports young women and youth to become active contributors within their communities.",
-      "Leadership development takes place through practical responsibility within community initiatives, self-help groups, enterprises, and local forums. Participants learn how to mobilize people, solve problems, manage resources, and contribute to community development efforts.",
-      "The result is a growing network of young leaders who are equipped to influence positive change and strengthen community resilience.",
+      "Leadership develops through practical responsibility, within community initiatives, self-help groups, enterprises, and local forums, where participants learn to mobilise people, solve problems, manage resources, and contribute meaningfully to community development.",
+      "The result is a growing network of young leaders equipped to influence positive change and strengthen their community's resilience.",
     ],
   },
 ];
@@ -66,10 +66,10 @@ function Programs() {
     <>
       <section className="container-x pt-16 md:pt-24 pb-16">
         <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] max-w-4xl">
-          From co-creation to <span className="italic text-primary">community success stories.</span>
+          From co-creation to <span className="italic text-primary">community-led success.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          We turn community ideas into transformational income generating activities, for sustainable economic pathways. Each program is co-designed with the people it serves, implemented through collective action, and structured to grow and scale into initiatives that communities can sustain and benefit from.
+          We work with communities to turn their own ideas into income-generating activities that build sustainable economic pathways. Every programme is co-designed with the people it serves, carried out through collective action, and structured so communities can sustain and benefit from it long after our direct support ends.
         </p>
       </section>
 
@@ -89,7 +89,7 @@ function Programs() {
                 <p key={idx} className="mt-4 text-muted-foreground leading-relaxed">{para}</p>
               ))}
               <Link to="/contact" className="mt-6 inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all">
-                Explore the program →
+                Explore the programme →
               </Link>
             </div>
           </div>
@@ -100,19 +100,19 @@ function Programs() {
       <section className="container-x py-24">
         <div className="max-w-3xl">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-            How our programs work together.
+            How our programmes work together.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Each program plays a different role, but together they create a pathway for long-term change.
+            Each programme plays a distinct role, but together they form a single pathway for lasting change.
           </p>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            It all begins with a participant joining a self help initiative that solves a community problem, and creates value and opportunity for a livelihood. As they become involved, they strengthen their technical, financial, and organizational skills through capacity building sessions.
+            It typically begins when a participant joins a self-help initiative addressing a community problem and creating a livelihood opportunity. As they become involved, capacity-strengthening sessions build their technical, financial, and organisational skills.
           </p>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            They also then participate in circular economy enterprises that improve local environmental conditions. Over time, participants take on leadership responsibilities within their groups, enterprises, and wider community structures.
+            Many also take part in circular economy enterprises that improve local environmental conditions. Over time, participants take on leadership responsibilities within their groups, enterprises, and wider community structures.
           </p>
           <p className="mt-5 text-foreground leading-relaxed">
-            This creates a progression from opportunity, to capability, to ownership, to leadership.
+            A progression from opportunity, to capability, to ownership, to leadership.
           </p>
         </div>
       </section>
@@ -123,27 +123,27 @@ function Programs() {
           <div>
             <h2 className="font-serif text-3xl md:text-4xl">What makes our approach different.</h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              Our approach is grounded more in practice, and moderate in theory. Rather than designing programs for communities, we design them with the people who will participate, ensuring that every initiative reflects real needs, real conditions, and real opportunities.
+              Our approach is grounded in practice, not theory. Rather than designing programmes for communities, we design them with the people who will take part, ensuring every initiative reflects real needs, real conditions, and real opportunities.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Learning is not separated from action. Skills are developed through participation, problem solving, and building experience as they contribute to ongoing initiatives.
+              Learning is never separated from action. Skills are built through participation, problem-solving, and lived experience as people contribute to initiatives already under way.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              From the beginning, we structure every program around strengthening community resilience. Our focus is on outcomes that can be seen and measured in everyday life.
+              From the outset, every programme is structured to strengthen community resilience, with a focus on outcomes that are visible and measurable in everyday life.
             </p>
           </div>
           <div>
             <h2 className="font-serif text-3xl md:text-4xl">Areas of focus.</h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              Our work is concentrated in a few interconnected areas where community potential can be transformed into long-term impact.
+              Our work concentrates on a few interconnected areas where community potential becomes long-term impact.
             </p>
             <ul className="mt-5 space-y-3 text-foreground">
               {[
-                "Community-owned livelihood enterprises that provide practical opportunities to generate income.",
-                "Groups of young people engaged in collective economic activities designed and managed locally.",
-                "Circular economy solutions that turn waste into valuable products and services.",
-                "Leadership development through real participation in decisions and coordination.",
-                "Stronger systems that allow communities to sustain and grow their own initiatives.",
+                "Community-owned livelihood enterprises that give young women and youth practical pathways to income and economic independence.",
+                "Groups of young people engaged in collective economic activity that is designed and managed locally, keeping opportunity creation within the community.",
+                "Circular economy solutions that turn waste and underused materials into products and services, linking environmental action directly to income.",
+                "Leadership development through genuine participation, decision-making, coordination, and responsibility within community structures.",
+                "Stronger systems that allow communities to sustain and grow their own initiatives over time.",
               ].map((m) => (
                 <li key={m} className="flex gap-3">
                   <span className="mt-2.5 inline-block w-4 h-px bg-primary flex-shrink-0" />
@@ -162,19 +162,16 @@ function Programs() {
             What success looks like.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            To us, success is not only about the number of programs implemented, but about the strength and independence of the communities we work with.
+            To us, success is not measured by the number of programmes delivered, but by the strength and independence of the communities we work with.
           </p>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            We see success when young women and youth are consistently earning income through activities they love doing and manage themselves. We see it when community-owned enterprises are able to operate without external support and continue to grow over time.
+            We see success when young women and youth consistently earn income through work they manage themselves, and when community-owned enterprises operate and grow without relying on external support.
           </p>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            We measure success when more young people are actively participating in local leadership spaces and contributing to decisions that affect their futures and communities.
+            We see it when more young people actively participate in local leadership spaces and shape decisions about their own future, and when circular economy initiatives produce visible, lasting improvements in their neighbourhoods.
           </p>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            We are particularly keen for visible changes in the environment, including cleaner, healthier neighbourhoods created through circular economy initiatives.
-          </p>
-          <p className="mt-5 text-muted-foreground leading-relaxed">
-            At a deeper level, success is reflected in stronger local economic networks where young people collaborate, trade, and support each other in ways that create shared resilience.
+            At a deeper level, success shows up in stronger local economic networks, where young people trade, collaborate, and support one another in ways that build shared resilience.
           </p>
         </div>
       </section>
@@ -186,10 +183,10 @@ function Programs() {
             Let's build together.
           </h2>
           <p className="mt-5 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            We welcome collaboration with individuals, institutions, and organizations that are willing to invest not only resources, but also ideas, expertise, and networks that strengthen local solutions.
+            We welcome collaboration with individuals, institutions, and organisations willing to invest not only resources, but also ideas, expertise, and networks that strengthen local solutions.
           </p>
           <p className="mt-4 text-muted-foreground max-w-2xl leading-relaxed">
-            Whether through funding, technical support, or partnership in implementation, we are open to working together to expand opportunities for young people and strengthen community systems that last. If this approach resonates with you, we would be glad to begin a conversation.
+            Whether through funding, technical support, or partnership in implementation, we are open to working together to expand opportunity for young people and strengthen the community systems that sustain it. If this approach resonates with you, we would welcome the conversation.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all">

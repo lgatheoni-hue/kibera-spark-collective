@@ -18,17 +18,17 @@ const pathways = [
   {
     n: "01",
     t: "Economic participation",
-    b: "We support young women and youth to establish and strengthen enterprises that generate income, create jobs, and respond to local needs. Economic stability provides the foundation upon which individuals can invest in themselves, support their families, and remain actively engaged in community development.",
+    b: "We support young women and youth to build and strengthen enterprises that generate income, create jobs, and respond to local needs. Economic stability gives people the foundation to invest in themselves, support their families, and stay engaged in their community's development.",
   },
   {
     n: "02",
     t: "Capacity development",
-    b: "Through practical experience, mentorship, and structured learning opportunities, participants strengthen the skills required to manage enterprises, coordinate activities, solve problems, and adapt to changing circumstances. Learning is connected directly to action, making it more relevant and sustainable.",
+    b: "Through practical experience, mentorship, and structured learning, participants strengthen the skills they need to manage enterprises, coordinate activities, solve problems, and adapt to change. Learning is tied directly to action, which keeps it relevant and sustainable.",
   },
   {
     n: "03",
     t: "Leadership development",
-    b: "As participants gain experience and confidence, they begin taking greater responsibility within their groups, enterprises, and communities. Leadership emerges through participation, collaboration, and accountability rather than through theory alone.",
+    b: "As participants gain experience and confidence, they take on greater responsibility within their groups, enterprises, and communities. Leadership grows through participation, collaboration, and accountability, not through theory alone.",
   },
 ];
 
@@ -40,13 +40,13 @@ function ToC() {
           Turning potential into <span className="italic text-primary">opportunity.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          Across Kibera, young women and youth possess talent, creativity, determination, and a deep understanding of the challenges facing their communities. Many have participated in training programs, awareness campaigns, and short-term initiatives. Yet despite these efforts, too many continue to face unemployment, limited economic opportunities, and exclusion from decisions that shape their future.
+          Across Kibera, young women and youth bring talent, determination, and an intimate understanding of the challenges their community faces. Many have already taken part in training programmes, awareness campaigns, and short-term initiatives. Yet too many continue to face unemployment, limited economic opportunity, and exclusion from the decisions that shape their future.
         </p>
         <p className="mt-5 max-w-2xl text-lg text-foreground leading-relaxed">
-          At WIMAGE, we believe the challenge is not a lack of potential. The challenge is the lack of practical pathways that allow young people to apply their skills, earn an income, build confidence, and become active leaders within their communities.
+          At WIMAGE, we do not believe the challenge is a lack of potential. The challenge is the absence of practical pathways that let young people apply their skills, earn an income, build confidence, and lead within their own community.
         </p>
         <p className="mt-5 max-w-2xl text-muted-foreground leading-relaxed">
-          Our theory of change explains how we work to bridge that gap.
+          Our Theory of Change sets out how we work to close that gap.
         </p>
       </section>
 
@@ -61,13 +61,13 @@ function ToC() {
         <div>
           <h2 className="font-serif text-3xl md:text-4xl">The challenge we see.</h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            Many community development interventions focus on transferring knowledge. While knowledge is important, information alone rarely creates lasting change.
+            Many community development interventions focus on transferring knowledge. Knowledge matters, but information alone rarely produces lasting change.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Young people may learn business skills without having access to an enterprise. They may attend leadership workshops without opportunities to lead. They may understand environmental challenges without having the resources to turn solutions into action.
+            Young people may learn business skills without ever having access to an enterprise. They may attend leadership workshops without ever having the chance to lead. They may understand an environmental challenge in detail, without the resources to act on it.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Without practical opportunities to apply what they have learned, skills often remain unused, confidence declines, and community initiatives struggle to survive beyond initial support.
+            Without a practical opportunity to apply what they have learned, skills go unused, confidence fades, and community initiatives often struggle to survive once external support ends.
           </p>
           <p className="mt-4 text-foreground leading-relaxed">
             We believe meaningful development requires more than awareness. It requires participation, ownership, and opportunity.
@@ -85,14 +85,14 @@ function ToC() {
         <div className="container-x py-20 md:py-28">
           <p className="eyebrow mb-3" style={{ color: "var(--ochre)" }}>What we believe</p>
           <p className="font-serif text-3xl md:text-5xl leading-snug text-white max-w-4xl">
-            People are more likely to create lasting change when they are actively involved in building it.
+            People are more likely to build lasting change when they are the ones building it.
           </p>
           <div className="mt-10 grid md:grid-cols-2 gap-10 max-w-5xl text-cream/85 leading-relaxed">
             <p>
-              When young women and youth have the opportunity to contribute to real enterprises, solve real community challenges, and take responsibility for real outcomes, they develop the confidence, skills, relationships, and motivation needed to sustain progress long after external support has ended.
+              When young women and youth have the chance to contribute to real enterprises, address real community challenges, and take responsibility for real outcomes, they build the confidence, skills, relationships, and motivation to sustain that progress long after external support has ended.
             </p>
             <p>
-              Development becomes stronger when people are not merely participants in a project, but owners of the solutions being created.
+              Development grows stronger when people are not simply participants in someone else's project, but owners of the solutions they helped create.
             </p>
           </div>
         </div>
@@ -105,22 +105,22 @@ function ToC() {
         </div>
         <div className="lg:col-span-7 space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>
-            We create opportunities for young women and youth to move through a journey of participation, enterprise development, and leadership.
+            We create space for young women and youth to move through a journey of participation, enterprise development, and leadership.
           </p>
           <p>
-            The journey often begins when a young person joins a community initiative designed around a local challenge or opportunity. This may involve environmental action, enterprise development, community organizing, or collective economic activities.
+            That journey often begins when a young person joins a community initiative built around a local challenge or opportunity, environmental action, enterprise development, community organising, or collective economic activity.
           </p>
           <p>
-            As participants become involved, they begin contributing to practical activities that create value for themselves and their communities. Through this process, they gain experience, build confidence, and strengthen their ability to work with others.
+            As they become involved, they begin contributing to practical activities that create value for themselves and their community. Through this process, they build experience, confidence, and the ability to work effectively with others.
           </p>
           <p>
-            Alongside these activities, participants develop technical, financial, organizational, and leadership skills that help them manage responsibilities and contribute more effectively to their initiatives.
+            Alongside this, participants develop technical, financial, organisational, and leadership skills that help them manage responsibility and contribute more effectively to their initiatives.
           </p>
           <p>
-            Over time, participants take on greater ownership of the activities they help build. They become decision-makers, coordinators, entrepreneurs, mentors, and advocates within their communities.
+            Over time, participants take on greater ownership of what they have helped build, becoming decision-makers, coordinators, entrepreneurs, mentors, and advocates within their own communities.
           </p>
           <p>
-            As enterprises grow and leadership capacity increases, communities become better positioned to generate opportunities, solve local challenges, and sustain their own development efforts.
+            As enterprises grow and leadership capacity deepens, communities become better positioned to generate opportunity, address local challenges, and sustain their own development.
           </p>
         </div>
       </section>
@@ -146,7 +146,7 @@ function ToC() {
             ))}
           </div>
           <p className="mt-10 text-foreground max-w-3xl leading-relaxed">
-            Together, these pathways create a cycle where economic opportunity strengthens confidence, confidence strengthens leadership, and leadership strengthens community resilience.
+            Together, these pathways create a cycle: economic opportunity builds confidence, confidence builds leadership, and leadership builds community resilience.
           </p>
         </div>
       </section>
@@ -161,16 +161,16 @@ function ToC() {
         <div className="lg:col-span-6">
           <h2 className="font-serif text-3xl md:text-4xl">What makes this model different.</h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            Many programs begin with activities and end when funding ends. Our approach focuses on building systems that communities can continue to manage and grow independently.
+            Many programmes begin with activities and end when funding ends. Our approach focuses on building systems communities can continue to manage and grow on their own.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            We do not view young women and youth as beneficiaries waiting for solutions. We see them as partners, innovators, entrepreneurs, and leaders who already possess valuable knowledge and capabilities.
+            We do not see young women and youth as beneficiaries waiting for a solution. We see them as partners, innovators, entrepreneurs, and leaders who already hold valuable knowledge and capability.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Rather than importing solutions, we work alongside communities to identify opportunities, organize collective action, and develop initiatives that reflect local priorities and realities.
+            Rather than importing solutions, we work alongside communities to identify opportunity, organise collective action, and develop initiatives that reflect local priorities and local realities.
           </p>
           <p className="mt-4 text-foreground leading-relaxed">
-            Our role is not to lead communities. Our role is to help communities strengthen their ability to lead themselves.
+            Our role is not to lead communities. Our role is to help communities strengthen their own ability to lead themselves.
           </p>
         </div>
       </section>
@@ -181,11 +181,11 @@ function ToC() {
           <h2 className="font-serif text-3xl md:text-4xl max-w-3xl">What success looks like.</h2>
           <ul className="mt-8 space-y-4 max-w-3xl">
             {[
-              "Young women and youth generating income through enterprises they helped create and manage.",
+              "Young women and youth generating income through enterprises they helped create and now manage.",
               "Community initiatives continuing to operate without relying entirely on external support.",
-              "Young people taking active roles in decision-making spaces and organizing collective action.",
-              "Environmental challenges becoming economic opportunities through circular economy work.",
-              "Communities developing the confidence and capability to create opportunities long after a project has ended.",
+              "Young people taking active roles in decision-making spaces, organising collective action, and shaping their community's future.",
+              "Environmental challenges turned into economic opportunity, with communities mobilising their own resources, talent, and networks to solve local problems.",
+              "Communities developing the confidence and capability to keep creating opportunity long after a project has ended.",
             ].map((s) => (
               <li key={s} className="flex gap-3 text-foreground">
                 <span className="mt-2.5 inline-block w-4 h-px bg-primary flex-shrink-0" />
@@ -205,13 +205,13 @@ function ToC() {
         </div>
         <div className="lg:col-span-7 space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>
-            Our long-term vision is a future where young women and youth have meaningful economic opportunities, stronger support networks, and greater influence over the decisions that affect their lives.
+            Our long-term vision is a future where young women and youth have meaningful economic opportunity, stronger support networks, and greater influence over the decisions that shape their lives.
           </p>
           <p>
-            We envision communities that are economically active, environmentally responsible, socially connected, and capable of driving their own development.
+            We envision communities that are economically active, environmentally responsible, socially connected, and equipped to drive their own development.
           </p>
           <p>
-            By connecting livelihoods, capability development, and leadership, we aim to contribute to communities that are not dependent on external solutions, but are equipped to create their own pathways to progress.
+            By connecting livelihoods, capability, and leadership, we aim to contribute to communities that are not dependent on external solutions, but equipped to build their own pathways to progress.
           </p>
         </div>
       </section>
@@ -225,7 +225,7 @@ function ToC() {
             <div className="max-w-2xl text-white">
               <p className="eyebrow mb-3" style={{ color: "var(--ochre)" }}>Building what lasts</p>
               <blockquote className="font-serif text-2xl md:text-4xl leading-snug text-white">
-                Lasting change does not happen because an organization delivers a project. It happens when people have the opportunity, confidence, and ownership required to shape their own future.
+                Lasting change does not happen because an organisation delivers a project. It happens when people have the opportunity, confidence, and ownership to shape their own future.
               </blockquote>
               <p className="mt-5 text-white/80">That is the change WIMAGE exists to support.</p>
             </div>
@@ -238,7 +238,7 @@ function ToC() {
           Walk alongside this work.
         </h2>
         <p className="mt-5 text-lg text-muted-foreground max-w-xl mx-auto">
-          We welcome partners, supporters, and collaborators who share our belief that sustainable development begins with community ownership and grows through practical action.
+          We welcome partners, supporters, and collaborators who share our belief that sustainable development begins with community ownership and grows through practical, accountable action.
         </p>
         <Link to="/contact" className="mt-8 inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
           Start a conversation →
