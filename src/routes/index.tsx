@@ -243,7 +243,7 @@ function Home() {
 
       {/* Partners Not Beneficiaries */}
       <section className="container-x py-20 md:py-28">
-        <div className="flex items-end justify-between flex-wrap gap-6 mb-14">
+        <div className="flex items-end justify-between flex-wrap gap-6 mb-6">
           <h2 className="font-serif text-4xl md:text-5xl max-w-2xl leading-tight">
             Partners, not beneficiaries.
           </h2>
@@ -251,6 +251,9 @@ function Home() {
             Meet the team →
           </Link>
         </div>
+        <p className="max-w-3xl text-lg text-muted-foreground leading-relaxed mb-10">
+          We do not use the word "beneficiary" to describe the people we work with. Every young woman, every youth group, and every community member is a partner in the work, contributing knowledge, leadership, and labour, not simply receiving a service.
+        </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           <figure className="aspect-[3/4] rounded-2xl overflow-hidden">
             <img src={team6} alt="Young women leaders together" loading="lazy" className="w-full h-full object-cover" />
