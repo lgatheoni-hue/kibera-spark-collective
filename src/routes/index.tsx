@@ -21,33 +21,33 @@ export const Route = createFileRoute("/")({
 });
 
 const programs = [
-  { title: "Economic Empowerment", image: economic, body: "We support young women and youths to build sustainable livelihoods through community enterprises and entrepreneurship capacity building." },
-  { title: "Capacity Building", image: capacity, body: "We strengthen the skills, systems, and tools needed to manage enterprises, access opportunities, and ensure sustainable livelihoods." },
-  { title: "Circular Economy", image: circular, body: "We support grassroot action to reduce waste by transforming it into enterprise opportunities through recycling, resource recovery, and green enterprise development." },
-  { title: "Community Leadership & Civic Engagement", image: leadership, body: "We support emerging leaders to participate in decision making, organize collective action, and advocate for community priorities." },
+  { title: "Economic Empowerment", image: economic, body: "We walk with young women and youth as they build sustainable livelihoods through community enterprises and practical, hands-on entrepreneurship support." },
+  { title: "Capacity Strengthening", image: capacity, body: "We build the skills, systems, and tools communities need to manage their enterprises, access opportunities, and sustain their own livelihoods." },
+  { title: "Circular Economy", image: circular, body: "We support grassroots action that turns waste into enterprise through recycling, resource recovery, and green, community-led business." },
+  { title: "Community Leadership & Civic Engagement", image: leadership, body: "We support emerging leaders to take part in local decision-making, organise collective action, and advocate for the priorities of their own community." },
 ];
 
 const values = [
-  { t: "Community Ownership", b: "Young women and community members help identify, design, lead, and sustain the initiatives they participate in." },
-  { t: "Action", b: "We believe people learn best by hands-on experience. Skills are developed through real work, real responsibility, and real opportunities." },
-  { t: "Accountability", b: "We listen, learn, implement and track progress to ensure resources create meaningful and transformative impact." },
-  { t: "Sustainability", b: "We focus on solutions that are local, scalable and proven to continue creating value long after a project funds ends." },
+  { t: "Community Ownership", b: "Young women and community members identify, design, lead, and sustain every initiative they take part in. Decisions are made with them, not for them." },
+  { t: "Action", b: "We believe people learn most through hands-on responsibility. Skills are built through real work, real accountability, and real outcomes." },
+  { t: "Accountability", b: "We listen, implement, track progress honestly, and report back to communities, partners, and ourselves, to make sure resources translate into genuine impact." },
+  { t: "Sustainability", b: "We invest in solutions that are locally owned and proven to keep creating value long after a programme or grant cycle ends." },
 ];
 
 const approach = [
-  { n: "01", t: "Listen", b: "It all begins by listening and understanding community needs, strengths, and aspirations." },
-  { n: "02", t: "Co-create", b: "We design the solutions alongside the people who will lead, and take ownership of them." },
-  { n: "03", t: "Act", b: "The solutions are put into practice through well structured and impact driven real initiatives." },
-  { n: "04", t: "Grow", b: "We strengthen successful models and support long-term sustainability and scalability." },
+  { n: "01", t: "Listen", b: "Every initiative begins by listening, understanding community needs, strengths, and aspirations directly from the people living them." },
+  { n: "02", t: "Co-create", b: "We design solutions together with the people who will lead and own them, not in isolation from them." },
+  { n: "03", t: "Act", b: "Solutions move into practice through well-structured, community-driven initiatives with clear shared responsibilities." },
+  { n: "04", t: "Grow", b: "We strengthen what is working and support communities to sustain and expand it on their own terms." },
 ];
 
 const successes = [
-  "Young women earning income through sustainable enterprises.",
-  "Stronger and more resilient households.",
-  "Community-owned businesses creating local opportunities.",
-  "Cleaner neighbourhoods through circular economy solutions.",
-  "Young women and youths taking active leadership roles.",
-  "Communities with the skills and confidence to shape their own future.",
+  "Young women earning steady income through enterprises they manage themselves.",
+  "Households with greater stability and resilience.",
+  "Community-owned businesses creating local jobs and opportunity.",
+  "Cleaner, healthier neighbourhoods through circular economy action.",
+  "Young women and youth taking up active leadership roles in their communities.",
+  "Communities with the skills, confidence, and networks to shape their own future.",
 ];
 
 function Home() {
@@ -65,26 +65,26 @@ function Home() {
           <div className="relative h-full w-full px-6 sm:px-10 lg:px-16 xl:px-24 flex items-center">
             <div className="text-white fade-up max-w-[640px] xl:max-w-[720px]">
               <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-white/85 mb-6">
-                Youth-led · Community owned · Built for action
+                Youth-led · Community owned · Built to last
               </p>
               <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5rem] leading-[1.05] tracking-tight text-white">
-                Empowering Young Women. <span className="italic text-primary">Strengthening</span> Communities.
+                Rooted in Kibera. Led by Young Women. <span className="italic text-primary">Built to Last.</span>
               </h1>
               <p className="mt-7 max-w-xl text-base md:text-lg text-white/90 leading-relaxed">
-                We work with young women and youths to co-create meaningful livelihoods, build local leadership, and develop sustainable enterprises that generate real income and lasting impact.
+                WIMAGE works alongside young women and youth in Kibera to build local leadership, grow community-owned enterprises, and create livelihoods that strengthen households and neighbourhoods for the long term.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
                 <Link
                   to="/contact"
                   className="inline-flex items-center px-7 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium shadow-lg shadow-primary/30"
                 >
-                  Get in Touch
+                  Start a Conversation
                 </Link>
                 <Link
                   to="/programs"
                   className="inline-flex items-center px-7 py-3.5 rounded-full border border-white/60 text-white hover:bg-white hover:text-primary transition-colors font-medium"
                 >
-                  Explore Programs
+                  Explore Programmes
                 </Link>
               </div>
             </div>
@@ -95,7 +95,7 @@ function Home() {
       <div className="border-b border-border bg-secondary/40">
         <div className="container-x py-4 flex items-center gap-8 text-xs uppercase tracking-[0.18em] text-muted-foreground whitespace-nowrap overflow-x-auto">
           <span>Economic Empowerment</span><span>·</span>
-          <span>Capacity Building</span><span>·</span>
+          <span>Capacity Strengthening</span><span>·</span>
           <span>Circular Economy</span><span>·</span>
           <span>Leadership & Civic Engagement</span><span>·</span>
           <span className="text-primary">Earn, Lead, Transform</span>
@@ -111,16 +111,16 @@ function Home() {
         </div>
         <div className="lg:col-span-7 order-1 lg:order-2">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-            A community organization built for <em className="text-primary">action.</em>
+            A community organisation built for <em className="text-primary">the long haul.</em>
           </h2>
           <p className="mt-6 text-lg text-foreground leading-relaxed">
-            We believe sustainable change happens when communities lead it themselves.
+            We believe lasting change is led by the people closest to it.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            Many development programs end after training. We focus on what comes next. We work alongside young people in Kibera to help nurture and grow initiatives that create income, strengthen local networks, and address local community challenges.
+            Too many development programmes end the day the training does. WIMAGE focuses on what happens after: we stay alongside young people in Kibera as they turn ideas into income, strengthen their networks, and respond to the challenges their community faces every day.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            Effective learning happens through active participation, ownership, and action.
+            Our experience tells us that real learning happens through doing, through ownership, responsibility, and action, not through a workshop certificate.
           </p>
         </div>
       </section>
@@ -130,13 +130,13 @@ function Home() {
         <div className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7">
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-              From Ideas to <span className="italic text-primary">Opportunities.</span>
+              From everyday ideas to <span className="italic text-primary">everyday income.</span>
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Young women and youths have the ambition, creativity, and potential to transform their communities. What is often missing is real opportunities to turn ideas into success, leadership, and lasting impact.
+              Young women and youth in Kibera are not short of ambition, creativity, or insight into their own community. What they are too often denied is the practical pathway to turn that insight into a livelihood, a leadership role, or lasting change.
             </p>
             <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-              We work alongside young people to identify opportunities, design the program, outline collective responsibilities, and build community-owned solutions that create economic opportunities and strengthen their communities.
+              We work side by side with young people to identify what is realistic and needed, design programmes together, agree shared responsibilities, and build community-owned solutions that generate income while strengthening the community around them.
             </p>
             <Link to="/about" className="mt-8 inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all">
               Learn more about us →
@@ -173,7 +173,7 @@ function Home() {
               Our four areas of impact.
             </h2>
             <Link to="/programs" className="text-sm underline underline-offset-4 hover:text-primary">
-              See all programs →
+              See all programmes →
             </Link>
           </div>
 
@@ -222,10 +222,10 @@ function Home() {
         <div className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-5">
             <h2 className="font-serif text-4xl md:text-5xl leading-tight text-white">
-              What success looks like.
+              What change looks like.
             </h2>
             <p className="mt-5 text-cream/80 leading-relaxed">
-              The change we are working towards, made visible in everyday life.
+              We measure our work honestly, against outcomes communities themselves define as meaningful.
             </p>
           </div>
           <div className="lg:col-span-7">
@@ -272,13 +272,13 @@ function Home() {
         <div className="rounded-[2rem] border border-border bg-card p-10 md:p-16 grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7">
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-              Let's build something <span className="text-primary italic">lasting.</span>
+              Let's build something lasting, <span className="text-primary italic">together.</span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg max-w-xl leading-relaxed">
-              We welcome like minded partners who believe in community first, local leadership, and practical action.
+              We welcome partners who believe in community-first development, locally led solutions, and practical, accountable action.
             </p>
             <p className="mt-4 text-muted-foreground text-lg max-w-xl leading-relaxed">
-              Whether you bring resources, expertise, networks, or ideas, we would love to explore how we can work together to create opportunities for young people and strengthen communities.
+              Whether you bring funding, technical expertise, networks, or ideas, we would value the chance to explore how we can work together to create opportunity for young people and strengthen their communities.
             </p>
           </div>
           <div className="lg:col-span-5 flex flex-col gap-3">
