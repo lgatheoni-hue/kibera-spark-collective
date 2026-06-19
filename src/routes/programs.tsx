@@ -21,7 +21,7 @@ const programs = [
     image: economic,
     lede: "We support young women and youth to build sustainable livelihoods by developing enterprises that generate income, create jobs, and respond to needs identified by their own community.",
     paragraphs: [
-      "Rather than offering entrepreneurship training alone, we help participants identify viable economic opportunities, organise into groups, test ideas, and establish income-generating ventures grounded in local demand.",
+      "We help participants identify viable economic opportunities, organise into groups, test ideas, and establish income-generating ventures grounded in local demand and practical, hands-on support.",
       "Participants gain hands-on experience in planning, production, marketing, customer engagement, and enterprise management, while generating real income from their work.",
       "Our aim is not simply to help people start businesses, but to build enterprises that create employment and strengthen the local economy around them.",
     ],
@@ -32,8 +32,7 @@ const programs = [
     image: capacity,
     lede: "Strong enterprises and community initiatives need more than motivation. They need the skills, systems, and confidence to manage growth and navigate setbacks.",
     paragraphs: [
-      "Our capacity-strengthening work builds the practical capabilities that help individuals and groups succeed.",
-      "Rather than one-off workshops, we embed learning within ongoing initiatives so participants can apply new knowledge immediately to real situations, reinforcing skills through practice, not theory alone.",
+      "Our capacity-strengthening work builds the practical capabilities that help individuals and groups succeed. We embed learning within ongoing initiatives so participants can apply new knowledge immediately to real situations, reinforcing skills through practice and lived experience.",
       "By strengthening both individual capability and organisational systems, we help communities build the foundation they need for long-term success.",
     ],
   },
@@ -103,16 +102,16 @@ function Programs() {
             How our programmes work together.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Each programme plays a distinct role, but together they form a single pathway for lasting change.
+            Each programme stands on its own and plays a distinct role. Together, they reinforce one another and form a single fabric of community strength.
           </p>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            It typically begins when a participant joins a self-help initiative addressing a community problem and creating a livelihood opportunity. As they become involved, capacity-strengthening sessions build their technical, financial, and organisational skills.
+            A young person might join WIMAGE through a livelihood group, a circular economy initiative, a leadership forum, or a capacity-strengthening session. There is no single "correct" entry point, because no single need defines a person or a community.
           </p>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            Many also take part in circular economy enterprises that improve local environmental conditions. Over time, participants take on leadership responsibilities within their groups, enterprises, and wider community structures.
+            Whatever the starting point, participants build practical skills, take on real responsibility, and grow in confidence. Many go on to contribute across more than one area: a young woman who joins a recycling enterprise may later take up a leadership role in her local forum, and a youth leader active in civic engagement may also help launch a community business.
           </p>
           <p className="mt-5 text-foreground leading-relaxed">
-            A progression from opportunity, to capability, to ownership, to leadership.
+            Each pathway strengthens the others.
           </p>
         </div>
       </section>
@@ -123,13 +122,13 @@ function Programs() {
           <div>
             <h2 className="font-serif text-3xl md:text-4xl">What makes our approach different.</h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              Our approach is grounded in practice, not theory. Rather than designing programmes for communities, we design them with the people who will take part, ensuring every initiative reflects real needs, real conditions, and real opportunities.
+              Our approach is grounded in practice, not theory. Rather than designing programmes for communities, we design them with the people who will take part, ensuring every initiative reflects real needs, real conditions, and real aspirations, whatever form they take.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Learning is never separated from action. Skills are built through participation, problem-solving, and lived experience as people contribute to initiatives already under way.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              From the outset, every programme is structured to strengthen community resilience, with a focus on outcomes that are visible and measurable in everyday life.
+              From the outset, every programme is structured to strengthen community resilience and human dignity, with a focus on outcomes that are visible and felt in everyday life, not only in income, but in voice, environment, and belonging.
             </p>
           </div>
           <div>

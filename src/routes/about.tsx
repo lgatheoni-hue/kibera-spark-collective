@@ -85,13 +85,10 @@ function About() {
               Young people in Kibera carry ideas, energy, and deep local knowledge. Yet despite making up the majority of the population, many continue to face real barriers to employment, leadership, and meaningful participation in decisions about their own community.
             </p>
             <p>
-              Too often, support stops at awareness and training, without building the practical pathways young people need to act on what they have learned.
+              Awareness and training are valuable starting points. WIMAGE was founded to build what comes next: the practical pathways that let young people act on what they have learned.
             </p>
             <p>
-              WIMAGE was founded on a simple conviction: change lasts when people have the opportunity to apply their skills, earn an income, and lead solutions within their own community.
-            </p>
-            <p>
-              We exist to build those pathways, helping young people move from participation to genuine, sustained contribution to their community's development.
+              WIMAGE was founded on a simple conviction: change lasts when people have the opportunity to apply their skills, earn an income, and lead solutions within their own community. We exist to build those pathways, helping young people move from participation to genuine, sustained contribution to their community's development.
             </p>
           </div>
         </div>
@@ -109,7 +106,7 @@ function About() {
             What makes WIMAGE <span className="italic text-primary">different.</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Many organisations focus on delivering activities. We focus on helping communities build something that outlasts any single project.
+            WIMAGE is built to help communities create something that outlasts any single project or grant cycle.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
             Our approach is rooted in community ownership, practical action, and long-term sustainability.
