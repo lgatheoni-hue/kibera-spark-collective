@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
 
 const programs = [
   { title: "Economic Empowerment", image: economic, body: "We walk with young women and youth as they build sustainable livelihoods through community enterprises and practical, hands-on entrepreneurship support." },
-  { title: "Capacity Strengthening", image: capacity, body: "We build the skills, systems, and tools communities need to manage their enterprises, access opportunities, and sustain their own livelihoods." },
+  { title: "Capacity Strengthening", image: capacity, body: "We build the practical skills, confidence, and systems young women and youth need to lead, organise, and solve problems, in their groups, their initiatives, and their daily lives." },
   { title: "Circular Economy", image: circular, body: "We support grassroots action that turns waste into enterprise through recycling, resource recovery, and green, community-led business." },
   { title: "Community Leadership & Civic Engagement", image: leadership, body: "We support emerging leaders to take part in local decision-making, organise collective action, and advocate for the priorities of their own community." },
 ];
@@ -35,19 +35,19 @@ const values = [
 ];
 
 const approach = [
-  { n: "01", t: "Listen", b: "Every initiative begins by listening, understanding community needs, strengths, and aspirations directly from the people living them." },
+  { n: "01", t: "Listen", b: "Every initiative begins by listening: understanding community needs, strengths, and aspirations directly from the people living them." },
   { n: "02", t: "Co-create", b: "We design solutions together with the people who will lead and own them, not in isolation from them." },
   { n: "03", t: "Act", b: "Solutions move into practice through well-structured, community-driven initiatives with clear shared responsibilities." },
   { n: "04", t: "Grow", b: "We strengthen what is working and support communities to sustain and expand it on their own terms." },
 ];
 
 const successes = [
-  "Young women earning steady income through enterprises they manage themselves.",
-  "Households with greater stability and resilience.",
-  "Community-owned businesses creating local jobs and opportunity.",
-  "Cleaner, healthier neighbourhoods through circular economy action.",
-  "Young women and youth taking up active leadership roles in their communities.",
-  "Communities with the skills, confidence, and networks to shape their own future.",
+  "Young women and youth with a stronger voice in the decisions that shape their community, and the confidence to use it.",
+  "Households with greater stability, and young people earning steady income through enterprises they manage themselves.",
+  "Cleaner, healthier neighbourhoods, as waste becomes a resource rather than a hazard.",
+  "Community groups with the skills and systems to manage their own initiatives, long after our direct support ends.",
+  "Community-owned businesses creating local jobs and shared opportunity.",
+  "A community with the confidence, networks, and sense of belonging to shape its own future.",
 ];
 
 function Home() {
@@ -68,10 +68,10 @@ function Home() {
                 Youth-led · Community owned · Built to last
               </p>
               <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5rem] leading-[1.05] tracking-tight text-white">
-                Rooted in Kibera. Led by Young Women. <span className="italic text-primary">Built to Last.</span>
+                Rooted in Kibera. Led by Young Women. <span className="italic text-primary">Built on Belonging.</span>
               </h1>
               <p className="mt-7 max-w-xl text-base md:text-lg text-white/90 leading-relaxed">
-                WIMAGE works alongside young women and youth in Kibera to build local leadership, grow community-owned enterprises, and create livelihoods that strengthen households and neighbourhoods for the long term.
+                WIMAGE works alongside young women and youth in Kibera to build local leadership, strengthen community voice, care for the environment we share, and grow livelihoods that hold households and neighbourhoods together for the long term.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
                 <Link
@@ -117,10 +117,10 @@ function Home() {
             We believe lasting change is led by the people closest to it.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            Too many development programmes end the day the training does. WIMAGE focuses on what happens after: we stay alongside young people in Kibera as they turn ideas into income, strengthen their networks, and respond to the challenges their community faces every day.
+            WIMAGE walks with young people in Kibera for the full journey: building skills, taking up leadership, caring for their environment, and strengthening the relationships and livelihoods that hold their community together.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            Our experience tells us that real learning happens through doing, through ownership, responsibility, and action, not through a workshop certificate.
+            Our experience tells us that real learning happens through doing: through ownership, responsibility, and action, not through a workshop certificate.
           </p>
         </div>
       </section>
@@ -130,13 +130,13 @@ function Home() {
         <div className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7">
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-              From everyday ideas to <span className="italic text-primary">everyday income.</span>
+              From everyday ideas to <span className="italic text-primary">everyday change.</span>
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Young women and youth in Kibera are not short of ambition, creativity, or insight into their own community. What they are too often denied is the practical pathway to turn that insight into a livelihood, a leadership role, or lasting change.
+              Young women and youth in Kibera are not short of ambition, creativity, or insight into their own community. What they are too often denied is the practical pathway to turn that insight into a livelihood, a leadership role, a cleaner neighbourhood, or a stronger voice in decisions that affect them.
             </p>
             <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-              We work side by side with young people to identify what is realistic and needed, design programmes together, agree shared responsibilities, and build community-owned solutions that generate income while strengthening the community around them.
+              We work side by side with young people to identify what matters most to them, design programmes together, agree shared responsibilities, and build community-owned solutions, whatever form they take, that strengthen the people and the place around them.
             </p>
             <Link to="/about" className="mt-8 inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all">
               Learn more about us →
@@ -225,7 +225,7 @@ function Home() {
               What change looks like.
             </h2>
             <p className="mt-5 text-cream/80 leading-relaxed">
-              We measure our work honestly, against outcomes communities themselves define as meaningful.
+              We measure our work honestly, against outcomes communities themselves define as meaningful, across every area we work in, not one.
             </p>
           </div>
           <div className="lg:col-span-7">
