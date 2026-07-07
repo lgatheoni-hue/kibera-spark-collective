@@ -8,7 +8,7 @@ export const Route = createFileRoute("/theory-of-change")({
   head: () => ({
     meta: [
       { title: "Theory of Change, WIMAGE" },
-      { name: "description", content: "Turning potential into opportunity. How WIMAGE bridges the gap between awareness and lasting community-led change." },
+      { name: "description", content: "How WIMAGE bridges the gap between awareness and lasting community-led change through economic participation, capacity, environmental stewardship, and leadership." },
     ],
   }),
   component: ToC,
@@ -17,22 +17,22 @@ export const Route = createFileRoute("/theory-of-change")({
 const pathways = [
   {
     n: "01",
-    t: "Economic participation",
+    t: "Economic Participation",
     b: "We support young women and youth to build and strengthen enterprises that generate income, create jobs, and respond to local needs. Economic stability gives people a foundation to invest in themselves, support their families, and stay engaged in their community's development.",
   },
   {
     n: "02",
-    t: "Capacity development",
-    b: "Through practical experience, mentorship, and structured learning, participants strengthen the skills and confidence they need to organise, coordinate, solve problems, and adapt to change. These are capabilities that serve them in every part of life, not only in enterprise. Learning is tied directly to action, which keeps it relevant and sustainable.",
+    t: "Capacity Development",
+    b: "Through practical experience, mentorship, and structured learning, participants strengthen the skills and confidence they need to organise, coordinate, solve problems, and adapt to change. Learning is tied directly to action, which keeps it relevant and sustainable.",
   },
   {
     n: "03",
-    t: "Environmental stewardship",
-    b: "We support young women and youth to take direct action on the environmental challenges their community faces: recovering value from waste, restoring shared spaces, and building circular enterprises that leave neighbourhoods cleaner and healthier. Caring for the environment is treated as a community responsibility in its own right, not only an economic opportunity.",
+    t: "Environmental Stewardship",
+    b: "We support young women and youth to take direct action on environmental challenges: recovering value from waste, restoring shared spaces, and building circular enterprises that leave neighbourhoods cleaner and healthier. Caring for the environment is treated as a community responsibility in its own right, not only an economic opportunity.",
   },
   {
     n: "04",
-    t: "Leadership development",
+    t: "Leadership Development",
     b: "As participants gain experience and confidence, they take on greater responsibility within their groups, initiatives, and communities: organising others, shaping decisions, and giving voice to community priorities. Leadership grows through participation, collaboration, and accountability, not through theory alone.",
   },
 ];
@@ -42,13 +42,16 @@ function ToC() {
     <>
       <section className="container-x pt-16 md:pt-24 pb-12">
         <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] max-w-4xl">
-          Turning potential into <span className="italic text-primary">opportunity.</span>
+          The gap we work to <span className="italic text-primary">close.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          Across Kibera, young women and youth bring talent, determination, and an intimate understanding of the challenges their community faces. Many have already taken part in training programmes, awareness campaigns, and short-term initiatives. Yet too many continue to face unemployment, limited economic opportunity, and exclusion from the decisions that shape their future.
+          Young women and youth in Kibera bring talent and deep local knowledge. Many have already taken part in training and awareness programmes, yet continue to face unemployment and exclusion from decisions that shape their future.
+        </p>
+        <p className="mt-5 max-w-2xl text-lg text-muted-foreground leading-relaxed">
+          Training on its own is rarely enough. A young person who learns business skills still needs an enterprise to apply them to. Someone who understands an environmental problem still needs the resources to act on it. Without a real opportunity to put learning into practice, skills go unused once the training ends.
         </p>
         <p className="mt-5 max-w-2xl text-lg text-foreground leading-relaxed">
-          At WIMAGE, we do not believe the challenge is a lack of potential. The challenge is the absence of practical pathways that let young people apply their skills, earn an income, build confidence, and lead within their own community.
+          WIMAGE exists to provide that opportunity: participation, ownership, and a stake in the outcome, not just awareness of the problem. The challenge is the absence of practical pathways that let young people apply their skills, earn an income, build confidence, and lead within their own community.
         </p>
         <p className="mt-5 max-w-2xl text-muted-foreground leading-relaxed">
           Our Theory of Change sets out how we work to close that gap.
@@ -61,48 +64,6 @@ function ToC() {
         </div>
       </section>
 
-      {/* The Challenge We See */}
-      <section className="container-x py-20 md:py-28 grid md:grid-cols-2 gap-10 md:gap-16 items-start">
-        <div>
-          <h2 className="font-serif text-3xl md:text-4xl">The challenge we see.</h2>
-          <p className="mt-5 text-muted-foreground leading-relaxed">
-            Building lasting change is hard. Knowledge and awareness are an essential starting point, but on their own, they are rarely enough to produce lasting change.
-          </p>
-          <p className="mt-4 text-muted-foreground leading-relaxed">
-            A young person may learn business skills and still need an enterprise to apply them to. They may build leadership knowledge and still need a real space to lead. They may understand an environmental challenge in detail and still need the resources to act on it.
-          </p>
-          <p className="mt-4 text-muted-foreground leading-relaxed">
-            Without a practical opportunity to put learning into action, skills can go unused and momentum can fade once initial support ends. It is a challenge our entire sector continues to work on together.
-          </p>
-          <p className="mt-4 text-foreground leading-relaxed">
-            We believe meaningful development requires more than awareness. It requires participation, ownership, and opportunity, and that is the gap WIMAGE is built to help close.
-          </p>
-        </div>
-        <div>
-          <div className="rounded-3xl overflow-hidden aspect-[4/5]">
-            <img src={problemImg} alt="Community members" className="w-full h-full object-cover object-[center_25%]" />
-          </div>
-        </div>
-      </section>
-
-      {/* What We Believe */}
-      <section className="bg-ink text-cream">
-        <div className="container-x py-20 md:py-28">
-          <p className="eyebrow mb-3" style={{ color: "var(--ochre)" }}>What we believe</p>
-          <p className="font-serif text-3xl md:text-5xl leading-snug text-white max-w-4xl">
-            People are more likely to build lasting change when they are the ones building it.
-          </p>
-          <div className="mt-10 grid md:grid-cols-2 gap-10 max-w-5xl text-cream/85 leading-relaxed">
-            <p>
-              When young women and youth have the chance to contribute to real enterprises, address real community challenges, and take responsibility for real outcomes, they build the confidence, skills, relationships, and motivation to sustain that progress long after external support has ended.
-            </p>
-            <p>
-              Development grows stronger when people are not simply participants in someone else's project, but owners of the solutions they helped create.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* How Change Happens */}
       <section className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-10">
         <div className="lg:col-span-5">
@@ -110,22 +71,13 @@ function ToC() {
         </div>
         <div className="lg:col-span-7 space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>
-            We create space for young women and youth to move through a journey of participation, enterprise development, and leadership.
+            A young person's journey with WIMAGE typically starts by joining a community initiative built around a local challenge: environmental action, enterprise development, or community organising.
           </p>
           <p>
-            That journey often begins when a young person joins a community initiative built around a local challenge or opportunity, environmental action, enterprise development, community organising, or collective economic activity.
+            As they contribute to practical activities, they build experience and the skills to manage responsibility. Over time, they take on greater ownership of what they've helped build, becoming decision-makers, entrepreneurs, and advocates in their own community.
           </p>
           <p>
-            As they become involved, they begin contributing to practical activities that create value for themselves and their community. Through this process, they build experience, confidence, and the ability to work effectively with others.
-          </p>
-          <p>
-            Alongside this, participants develop technical, financial, organisational, and leadership skills that help them manage responsibility and contribute more effectively to their initiatives.
-          </p>
-          <p>
-            Over time, participants take on greater ownership of what they have helped build, becoming decision-makers, coordinators, entrepreneurs, mentors, and advocates within their own communities.
-          </p>
-          <p>
-            As enterprises grow and leadership capacity deepens, communities become better positioned to generate opportunity, address local challenges, and sustain their own development.
+            The community, in turn, becomes better able to generate opportunity and sustain its own development.
           </p>
         </div>
       </section>
@@ -134,10 +86,11 @@ function ToC() {
       <section className="bg-secondary/40 border-y border-border">
         <div className="container-x py-20 md:py-28">
           <div className="max-w-3xl mb-14">
+            <p className="eyebrow mb-3 text-primary">What we believe</p>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-              The four pathways of change.
+              People are more likely to build lasting change when they are the ones building it.
             </h2>
-            <p className="mt-5 text-muted-foreground leading-relaxed">
+            <p className="mt-6 text-muted-foreground leading-relaxed">
               Our approach combines four interconnected pathways that reinforce one another. None comes before the others. Each meets a different part of what a young person and their community need to thrive.
             </p>
           </div>
@@ -182,23 +135,27 @@ function ToC() {
 
       {/* What Success Looks Like */}
       <section className="bg-secondary/40 border-y border-border">
-        <div className="container-x py-20 md:py-28">
-          <h2 className="font-serif text-3xl md:text-4xl max-w-3xl">What success looks like.</h2>
-          <ul className="mt-8 space-y-4 max-w-3xl">
-            {[
-              "Young people taking active roles in decision-making spaces, organising collective action, and shaping their community's future.",
-              "Environmental challenges turned into community action, as young people mobilise their own resources, talent, and networks to build cleaner, healthier neighbourhoods.",
-              "Young women and youth generating income through enterprises they helped create and now manage.",
-              "Community initiatives continuing to operate without relying entirely on external support.",
-              "Young people who feel they belong, are heard, and have a stake in the future of their community, not only a role within a project.",
-              "Communities developing the confidence and capability to keep creating opportunity, in every sense of the word, long after a project has ended.",
-            ].map((s) => (
-              <li key={s} className="flex gap-3 text-foreground">
-                <span className="mt-2.5 inline-block w-4 h-px bg-primary flex-shrink-0" />
-                <span>{s}</span>
-              </li>
-            ))}
-          </ul>
+        <div className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-10 items-start">
+          <div className="lg:col-span-5">
+            <h2 className="font-serif text-3xl md:text-4xl">What success looks like.</h2>
+          </div>
+          <div className="lg:col-span-7">
+            <ul className="space-y-4">
+              {[
+                "Young people taking active roles in decision-making spaces, organising collective action, and shaping their community's future.",
+                "Environmental challenges turned into community action, as young people mobilise their own resources, talent, and networks to build cleaner, healthier neighbourhoods.",
+                "Young women and youth generating income through enterprises they helped create and now manage.",
+                "Community initiatives continuing to operate without relying entirely on external support.",
+                "Young people who feel they belong, are heard, and have a stake in the future of their community, not only a role within a project.",
+                "Communities developing the confidence and capability to keep creating opportunity, long after a project has ended.",
+              ].map((s) => (
+                <li key={s} className="flex gap-3 text-foreground">
+                  <span className="mt-2.5 inline-block w-4 h-px bg-primary flex-shrink-0" />
+                  <span>{s}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -253,3 +210,5 @@ function ToC() {
     </>
   );
 }
+
+void problemImg;

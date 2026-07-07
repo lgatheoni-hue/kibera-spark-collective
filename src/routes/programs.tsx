@@ -7,8 +7,8 @@ import leadership from "../assets/photo-advocacy-signs.jpg";
 export const Route = createFileRoute("/programs")({
   head: () => ({
     meta: [
-      { title: "Programs, WIMAGE" },
-      { name: "description", content: "From co-creation to community success stories. Livelihoods, capacity, circular economy, and leadership programs co-designed with young women and youth." },
+      { title: "Programmes, WIMAGE" },
+      { name: "description", content: "Four programmes co-designed with young women and youth in informal settlements: economic empowerment, capacity strengthening, circular economy, and leadership." },
     ],
   }),
   component: Programs,
@@ -19,21 +19,21 @@ const programs = [
     num: "01",
     title: "Economic Empowerment",
     image: economic,
-    lede: "We support young women and youth to build sustainable livelihoods by developing enterprises that generate income, create jobs, and respond to needs identified by their own community.",
+    lede: "We help women establish local group enterprises, supporting them from initial business ideation through to an operating, income-generating venture.",
     paragraphs: [
-      "We help participants identify viable economic opportunities, organise into groups, test ideas, and establish income-generating ventures grounded in local demand and practical, hands-on support.",
-      "Participants gain hands-on experience in planning, production, marketing, customer engagement, and enterprise management, while generating real income from their work.",
-      "Our aim is not simply to help people start businesses, but to build enterprises that create employment and strengthen the local economy around them.",
+      "Members identify opportunities grounded in local demand, test ideas, and set up ventures with our hands-on support. Common ventures include women in agripreneurship, recycling, technology for good, and local services.",
+      "Participants gain practical experience in planning, marketing, and enterprise management while generating real income.",
+      "Our main goal is enterprises that create jobs and strengthen the local economy, not just individual businesses.",
     ],
   },
   {
     num: "02",
     title: "Capacity Strengthening",
     image: capacity,
-    lede: "Strong enterprises and community initiatives need more than motivation. They need the skills, systems, and confidence to manage growth and navigate setbacks.",
+    lede: "At WIMAGE, strong enterprises and community initiatives need more than motivation. They need the skills, systems, and confidence to manage growth and navigate setbacks.",
     paragraphs: [
-      "Our capacity-strengthening work builds the practical capabilities that help individuals and groups succeed. We embed learning within ongoing initiatives so participants can apply new knowledge immediately to real situations, reinforcing skills through practice and lived experience.",
-      "By strengthening both individual capability and organisational systems, we help communities build the foundation they need for long-term success.",
+      "We design structured skills sessions for the young women and youth in our enterprise, circular economy, and leadership groups, covering practical areas such as financial record-keeping, group governance, communication, and problem-solving.",
+      "Sessions are embedded directly into ongoing initiatives so participants can apply new knowledge immediately to real situations they are already managing.",
     ],
   },
   {
@@ -42,9 +42,8 @@ const programs = [
     image: circular,
     lede: "Many communities face environmental challenges that are too often seen only as problems. We see many of these same challenges as opportunities for young people.",
     paragraphs: [
-      "Our circular economy work helps young women and youth recover value from materials that would otherwise be discarded.",
-      "We support communities to identify market opportunities linked to environmental action, develop products and services from waste materials, and build enterprises that contribute to cleaner, healthier neighbourhoods.",
-      "This work creates a direct link between environmental stewardship and economic opportunity, allowing communities to build livelihoods while addressing the environmental concerns they live with every day.",
+      "We co-design community-based recycling and resource recovery initiatives in groups.",
+      "Groups identify local market opportunities linked to waste and develop products, services, and enterprises from it, contributing to cleaner, healthier neighbourhoods while building livelihoods.",
     ],
   },
   {
@@ -53,9 +52,8 @@ const programs = [
     image: leadership,
     lede: "Community development needs people who are willing and equipped to organise others, make informed decisions, and advocate for their community's priorities.",
     paragraphs: [
-      "Our leadership and civic engagement work supports young women and youth to become active contributors within their communities.",
-      "Leadership develops through practical responsibility, within community initiatives, self-help groups, enterprises, and local forums, where participants learn to mobilise people, solve problems, manage resources, and contribute meaningfully to community development.",
-      "The result is a growing network of young leaders equipped to influence positive change and strengthen their community's resilience.",
+      "We design leadership forums and civic participation initiatives giving young women and youth an ongoing space to take on practical responsibility, mobilise people, solve problems, and manage resources within community initiatives and local forums.",
+      "The result is a growing network of young thought leadership equipped to influence positive change and strengthen their community's resilience.",
     ],
   },
 ];
@@ -68,7 +66,7 @@ function Programs() {
           From co-creation to <span className="italic text-primary">community-led success.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          We work with communities to turn their own ideas into income-generating activities that build sustainable economic pathways. Every programme is co-designed with the people it serves, carried out through collective action, and structured so communities can sustain and benefit from it long after our direct support ends.
+          WIMAGE runs four programmes in informal settlements, each addressing a different need for young women and youth. Every programme is co-designed with the people it serves and structured so communities can sustain it after our direct involvement.
         </p>
       </section>
 
@@ -95,88 +93,36 @@ function Programs() {
         </section>
       ))}
 
-      {/* How programs work together */}
+      {/* How programmes work together */}
       <section className="container-x py-24">
         <div className="max-w-3xl">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight">
             How our programmes work together.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Each programme stands on its own and plays a distinct role. Together, they reinforce one another and form a single fabric of community strength.
+            A young woman can join the programme that matches what they need most: a livelihood through Economic Empowerment, a green enterprise through Circular Economy, a stronger voice through Leadership & Civic Engagement, or practical skills through Capacity Strengthening, which also runs across the other three.
           </p>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            A young person might join WIMAGE through a livelihood group, a circular economy initiative, a leadership forum, or a capacity-strengthening session. There is no single "correct" entry point, because no single need defines a person or a community.
-          </p>
-          <p className="mt-5 text-muted-foreground leading-relaxed">
-            Whatever the starting point, participants build practical skills, take on real responsibility, and grow in confidence. Many go on to contribute across more than one area: a young woman who joins a recycling enterprise may later take up a leadership role in her local forum, and a youth leader active in civic engagement may also help launch a community business.
-          </p>
-          <p className="mt-5 text-foreground leading-relaxed">
-            Each pathway strengthens the others.
+            In practice, they reinforce one another. A young woman in an Economic Empowerment group draws on Capacity Strengthening sessions to manage her enterprise, and may later take up a leadership role through civic engagement work. Participants are welcome to join more than one programme.
           </p>
         </div>
       </section>
 
       {/* What makes our approach different */}
       <section className="bg-secondary/40 border-y border-border">
-        <div className="container-x py-20 md:py-28 grid md:grid-cols-2 gap-10 md:gap-16">
-          <div>
-            <h2 className="font-serif text-3xl md:text-4xl">What makes our approach different.</h2>
-            <p className="mt-5 text-muted-foreground leading-relaxed">
-              Our approach is grounded in practice, not theory. Rather than designing programmes for communities, we design them with the people who will take part, ensuring every initiative reflects real needs, real conditions, and real aspirations, whatever form they take.
-            </p>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              Learning is never separated from action. Skills are built through participation, problem-solving, and lived experience as people contribute to initiatives already under way.
-            </p>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              From the outset, every programme is structured to strengthen community resilience and human dignity, with a focus on outcomes that are visible and felt in everyday life, not only in income, but in voice, environment, and belonging.
-            </p>
-          </div>
-          <div>
-            <h2 className="font-serif text-3xl md:text-4xl">Areas of focus.</h2>
-            <p className="mt-5 text-muted-foreground leading-relaxed">
-              Our work concentrates on a few interconnected areas where community potential becomes long-term impact.
-            </p>
-            <ul className="mt-5 space-y-3 text-foreground">
-              {[
-                "Community-owned livelihood enterprises that give young women and youth practical pathways to income and economic independence.",
-                "Groups of young people engaged in collective economic activity that is designed and managed locally, keeping opportunity creation within the community.",
-                "Circular economy solutions that turn waste and underused materials into products and services, linking environmental action directly to income.",
-                "Leadership development through genuine participation, decision-making, coordination, and responsibility within community structures.",
-                "Stronger systems that allow communities to sustain and grow their own initiatives over time.",
-              ].map((m) => (
-                <li key={m} className="flex gap-3">
-                  <span className="mt-2.5 inline-block w-4 h-px bg-primary flex-shrink-0" />
-                  <span>{m}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* What success looks like */}
-      <section className="container-x py-20 md:py-28">
-        <div className="max-w-3xl">
-          <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-            What success looks like.
-          </h2>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            To us, success is not measured by the number of programmes delivered, but by the strength and independence of the communities we work with.
-          </p>
+        <div className="container-x py-20 md:py-28 max-w-3xl">
+          <h2 className="font-serif text-3xl md:text-4xl">What makes our approach different.</h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            We see success when young women and youth consistently earn income through work they manage themselves, and when community-owned enterprises operate and grow without relying on external support.
+            We design programmes with the people who take part, not for them, so each one reflects real needs and real conditions rather than a template.
           </p>
-          <p className="mt-5 text-muted-foreground leading-relaxed">
-            We see it when more young people actively participate in local leadership spaces and shape decisions about their own future, and when circular economy initiatives produce visible, lasting improvements in their neighbourhoods.
-          </p>
-          <p className="mt-5 text-muted-foreground leading-relaxed">
-            At a deeper level, success shows up in stronger local economic networks, where young people trade, collaborate, and support one another in ways that build shared resilience.
+          <p className="mt-4 text-muted-foreground leading-relaxed">
+            Skills are built through participation and problem-solving as people contribute to initiatives already under way, not in a classroom disconnected from the work.
           </p>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="container-x pb-24">
+      <section className="container-x py-24">
         <div className="rounded-[2rem] border border-border bg-card p-10 md:p-14">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight max-w-3xl">
             Let's build together.
@@ -192,7 +138,7 @@ function Programs() {
               Talk to us →
             </Link>
             <Link to="/theory-of-change" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-foreground/20 hover:border-foreground/60 transition-colors">
-              Explore our theory of change →
+              Explore our Theory of Change →
             </Link>
           </div>
         </div>

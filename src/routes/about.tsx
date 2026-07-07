@@ -8,8 +8,8 @@ import community from "../assets/photo-community-3.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About WIMAGE, Built with Communities. Driven by Young Energy" },
-      { name: "description", content: "WIMAGE is a youth-led community based organization working with young people in Kibera to create sustainable livelihoods and community-driven development." },
+      { title: "About WIMAGE, Built with Communities. Led by Young People." },
+      { name: "description", content: "WIMAGE Kenya is a women-led, community-based organisation working with young women and youths in informal settlements." },
     ],
   }),
   component: About,
@@ -26,20 +26,40 @@ const values = [
 type Person = { name: string; role: string; bio: string };
 
 const board: Person[] = [
-  { name: "Princess Rogelyne", role: "Board Chairperson", bio: "Chairperson of the WIMAGE board, providing strategic leadership and championing community-driven development." },
-  { name: "Patrick Kiarie", role: "Board Secretary", bio: "Board Secretary supporting governance, documentation, and continuity across WIMAGE's work." },
-  { name: "Lucy Wangui", role: "Board Treasurer", bio: "Treasurer overseeing financial stewardship, transparent reporting, and responsible use of resources." },
-  { name: "Marion Stetcy", role: "Board Member, Partnerships", bio: "Board member leading partnership strategy and stakeholder engagement." },
-  { name: "Pascal Nabwana", role: "Board Member, Impact & Sustainability", bio: "Board member guiding impact, monitoring, and long-term sustainability of community programmes." },
+  {
+    name: "Marion Stetcy",
+    role: "Board Member, Partnerships",
+    bio: "Marion is the East African Community (EAC) Youth Ambassador to Kenya, Commonwealth Students Association Secretary for the Africa region, and Communications & Projects Officer at Youth for SDGs Kenya under the Tabianchi SOS Project. A certified mediator by the Judiciary of Kenya, leadership coach, and trainer, she is committed to equipping young people with the skills and values to lead with integrity, accountability, and resilience.",
+  },
+  {
+    name: "Patrick Kiarie",
+    role: "Board Secretary",
+    bio: "Patrick is a chess enthusiast, passionate about youth empowerment, entrepreneurship, and technology for good. He works at the intersection of civic engagement, digital advocacy, and youth participation, designing and implementing programmes that empower young people and strengthen inclusive public dialogue with a focus on governance and social change in Kenya.",
+  },
+  {
+    name: "Director of Diaspora Relations",
+    role: "Director of Diaspora Relations",
+    bio: "Board member coordinating diaspora relations, partnerships, and cross-border collaboration for WIMAGE Kenya.",
+  },
+  {
+    name: "Tinashe Sirikwa",
+    role: "Board Member",
+    bio: "Tinashe is a Social and Behaviour Change (SBC) professional with extensive experience coordinating community-centred health, resilience, and development programmes. Her expertise spans public health, nutrition, mental health, gender-based violence, sexual and reproductive health (SRHR), WASH, child protection, adolescent wellbeing, non-communicable diseases, and agriculture.",
+  },
+  {
+    name: "Pascal Nabwana",
+    role: "Board Member, Impact & Sustainability",
+    bio: "Benjamin Pascal W. Nabwana is a youth leadership practitioner, governance advocate, and social entrepreneur serving as Vice President and Head of the Directorate of Strategic Partnerships, Resource Mobilization, and Corporate Relations at The Youth Parliament of Kenya (YPK). He holds an MBA, a Diploma in ICT from AIRADS, and a professional certification in Counseling Psychology.",
+  },
 ];
 
 const secretariat: Person[] = [
   { name: "Patrick Kiarie", role: "Executive Director", bio: "Leads day-to-day operations, strategic direction, and partnerships across WIMAGE programmes." },
   { name: "Gerry Obiero", role: "Finance Director", bio: "Oversees financial planning, controls, and compliance to ensure resources deliver intended impact." },
-  { name: "Agness Muteti", role: "Programmes Coordinator", bio: "Coordinates programme design, implementation, and community engagement across all initiatives." },
+  { name: "Diana Mirina", role: "Programmes Coordinator", bio: "Coordinates programme design, implementation, and community engagement across all initiatives." },
   { name: "Pauline Wambui", role: "Communications Officer", bio: "Leads storytelling, brand voice, and community communications across digital and print." },
-  { name: "Baraka Munene", role: "Impact, Monitoring & Evaluation Officer", bio: "Designs monitoring frameworks, tracks outcomes, and translates evidence into programme learning." },
-  { name: "Kevin Kamuyu", role: "Field Officer", bio: "Works directly with community groups, supporting implementation and field-level coordination." },
+  { name: "Mary Njoki", role: "Impact, Monitoring & Evaluation Officer", bio: "Designs monitoring frameworks, tracks outcomes, and translates evidence into programme learning." },
+  { name: "Gabriel Suter", role: "Field Officer", bio: "Works directly with community groups, supporting implementation and field-level coordination." },
   { name: "Veronicah Wanjiru", role: "Fundraising & Partnerships", bio: "Builds funding pipelines, partner relationships, and resource mobilisation for community programmes." },
 ];
 
@@ -51,10 +71,10 @@ function About() {
           Built with communities. <span className="italic text-primary">Led by young people.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          WIMAGE is a youth-led, community-based organisation working with young people in Kibera to build sustainable livelihoods, strengthen local enterprises, and support community-driven development.
+          WIMAGE Kenya was born in 2022 and registered as an organisation in 2024. We are the Kenyan chapter of the WIMAGE Global Network, with partners and implementing chapters across Africa, the United Kingdom, and the United States (as a 501(c)(3)).
         </p>
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-          We believe the people closest to a community's challenges are also closest to its solutions. Our role is to walk alongside them, helping turn their own solutions into action, building practical pathways to opportunity, and supporting impact that communities can own and sustain for themselves.
+          WIMAGE Kenya is a women-led, community-based organisation that monitors the plight of women and runs programmes with young women and youths in informal settlements. We combine skills training, enterprise support, civic participation, and environmental action so communities can manage and sustain what they build after we take a step back.
         </p>
       </section>
 
@@ -67,28 +87,31 @@ function About() {
       {/* Vision & Mission */}
       <section className="container-x py-20 md:py-28 grid lg:grid-cols-2 gap-10 md:gap-16">
         <Block title="Our Vision">
-          A community where young people have access to opportunity, a genuine sense of belonging, and the agency to shape their own future.
+          Communities where young people have access to opportunity, a genuine sense of belonging, and the agency to shape their own future.
         </Block>
         <Block title="Our Mission">
-          To work alongside young people to co-create sustainable solutions, strengthen community leadership, and build inclusive local economies.
+          To work with young people to co-create sustainable solutions, strengthen community leadership, and build inclusive local economies.
         </Block>
       </section>
 
-      {/* Why We Exist */}
+      {/* Why We Do What We Do */}
       <section className="bg-secondary/40 border-y border-border">
         <div className="container-x py-20 md:py-28 grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-5">
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight">Why we exist.</h2>
+            <h2 className="font-serif text-4xl md:text-5xl leading-tight">Why we do what we do.</h2>
           </div>
           <div className="lg:col-span-7 space-y-5 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Young people in Kibera carry ideas, energy, and deep local knowledge. Yet despite making up the majority of the population, many continue to face real barriers to employment, leadership, and meaningful participation in decisions about their own community.
+              Young people in Kenya make up the majority of the population, yet they remain marginalised, facing real barriers to employment, leadership, and participation in decisions about their own future.
             </p>
             <p>
-              Awareness and training are valuable starting points. WIMAGE was founded to build what comes next: the practical pathways that let young people act on what they have learned.
+              Young people are disconnected from the government because they read and learn about democracy and good governance in classrooms while they watch it fail just outside the school gates.
             </p>
             <p>
-              WIMAGE was founded on a simple conviction: change lasts when people have the opportunity to apply their skills, earn an income, and lead solutions within their own community. We exist to build those pathways, helping young people move from participation to genuine, sustained contribution to their community's development.
+              Training and awareness campaigns are a starting point, but on their own they cannot create sustainable solutions, livelihoods, or a seat at the table.
+            </p>
+            <p>
+              WIMAGE was founded to build what comes after training and awareness: the enterprises, forums, and leadership spaces where young people can put what they have learned to use.
             </p>
           </div>
         </div>
@@ -109,13 +132,10 @@ function About() {
             WIMAGE is built to help communities create something that outlasts any single project or grant cycle.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            Our approach is rooted in community ownership, practical action, and long-term sustainability.
+            Our approach is rooted in community ownership, practical action, and long-term sustainability. We work alongside young women and youth to identify and weigh up challenges and opportunities, co-create solutions, and stay engaged as initiatives grow. Learning happens through action, participation, shared responsibility, and lived experience, not in a classroom alone.
           </p>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            We work alongside young women and youth to identify and weigh up opportunities, co-create solutions, and stay engaged as initiatives grow. Learning happens through participation, shared responsibility, and lived experience, not in a classroom alone.
-          </p>
-          <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            Communities are not the audience for our work. They are our partners, and their leadership is central to whatever success we achieve together.
+            Communities are not the audience for our work. They are our stakeholders and partners, and their success is central to whatever impact we achieve together.
           </p>
         </div>
       </section>
@@ -142,13 +162,10 @@ function About() {
         </div>
         <div className="lg:col-span-7 space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>
-            WIMAGE is led by a team committed to women and youth empowerment, and deeply rooted in the communities we serve.
+            WIMAGE brings together expertise in community enterprise management, community engagement, circular economy entrepreneurship, community leadership, and organisational management.
           </p>
           <p>
-            Our team brings together expertise in community enterprise management, community engagement, circular economy entrepreneurship, community leadership, and organisational management.
-          </p>
-          <p>
-            WIMAGE is governed by a Board of Directors, supported by a Secretariat and a network of volunteers and local partners who contribute technical expertise, mentorship, and strategic guidance.
+            We are governed by a Board of Directors, supported by a Secretariat and a network of volunteers and local partners.
           </p>
         </div>
       </section>
@@ -175,10 +192,7 @@ function About() {
           </div>
           <div className="lg:col-span-7 space-y-5 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Trust is earned through accountability and through delivering the results we set out to achieve. We maintain clear systems for financial management, programme implementation, and impact tracking, and we engage communities, partners, and stakeholders regularly to gather feedback, share progress openly, and improve our work.
-            </p>
-            <p>
-              By combining local knowledge with evidence-informed programme design, we ensure that every resource entrusted to us is used responsibly and directed toward lasting impact.
+              We maintain clear systems for financial management, programme implementation, and impact tracking, and we report progress openly to communities, partners, and donors.
             </p>
           </div>
         </div>
@@ -209,14 +223,11 @@ function About() {
             Come and see the work.
           </h2>
           <p className="mt-5 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            We welcome partners, supporters, and community members who want to see what we do and how we do it, and to explore how you might be part of it.
+            We welcome partners, supporters, and community members who want to see what we do and explore how they might be part of it.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
-              Book a site visit, become a volunteer →
-            </Link>
-            <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-foreground/20 hover:border-foreground/60 transition-colors">
-              Book a site visit, partner with us →
+              Contact us →
             </Link>
             <Link to="/programs" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-foreground/20 hover:border-foreground/60 transition-colors">
               Learn more about our programmes →
