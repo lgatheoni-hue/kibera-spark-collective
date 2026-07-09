@@ -249,10 +249,10 @@ function Home() {
               <span>→</span>
             </Link>
             <a
-              href="mailto:info@wimage.org.ke"
+              href="mailto:info@wimage-kenya.org"
               className="inline-flex items-center justify-between gap-3 px-6 py-5 rounded-2xl border border-border hover:border-foreground/50 transition-colors"
             >
-              <span>info@wimage.org.ke</span>
+              <span>info@wimage-kenya.org</span>
               <span>→</span>
             </a>
           </div>
