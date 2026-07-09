@@ -155,14 +155,14 @@ function Footer() {
           <ul className="space-y-2.5 text-sm">
             <li>
               <a
-                href="mailto:info@wimage.org.ke"
+                href="mailto:info@wimage-kenya.org"
                 className="text-white/85 hover:text-white transition-colors"
               >
-                info@wimage.org.ke
+                info@wimage-kenya.org
               </a>
             </li>
-            <li className="text-white/70">Kibera, Nairobi · Kenya</li>
-            <li className="text-white/70">Founded 2024</li>
+            <li className="text-white/70">Wu Yi Plaza, 5th Floor</li>
+            <li className="text-white/70">Galana Road, Nairobi, Kenya</li>
           </ul>
         </div>
       </div>
