@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 import hero from "../assets/photo-rally.jpg";
 import economic from "../assets/photo-team-indoor.jpg";
 import capacity from "../assets/photo-library.jpg";
@@ -9,6 +10,7 @@ import team6 from "../assets/photo-team-6.jpg";
 import team8 from "../assets/photo-team-8.jpg";
 import counselling from "../assets/photo-counselling-2.jpg";
 import maktaba from "../assets/photo-maktaba.jpg";
+import { ConversationModal } from "../components/ConversationModal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
