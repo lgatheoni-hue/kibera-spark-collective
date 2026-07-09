@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "WIMAGE Kenya, Voice, Livelihoods and Green Communities" },
-      { name: "description", content: "WIMAGE works with young women in informal settlements to strengthen their voices, build livelihoods, and create environment-conscious communities." },
+      { name: "description", content: "We work with young women in informal settlements to strengthen their leadership, build livelihoods, and create environment-conscious communities." },
     ],
   }),
   component: Home,
