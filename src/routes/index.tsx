@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
 import hero from "../assets/photo-rally.jpg";
 import economic from "../assets/photo-team-indoor.jpg";
 import capacity from "../assets/photo-library.jpg";
@@ -10,7 +9,6 @@ import team6 from "../assets/photo-team-6.jpg";
 import team8 from "../assets/photo-team-8.jpg";
 import counselling from "../assets/photo-counselling-2.jpg";
 import maktaba from "../assets/photo-maktaba.jpg";
-import { ConversationModal } from "../components/ConversationModal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -45,12 +43,10 @@ const successes = [
 ];
 
 function Home() {
-  const [convoOpen, setConvoOpen] = useState(false);
   return (
     <>
-      <ConversationModal open={convoOpen} onClose={() => setConvoOpen(false)} />
       <section className="relative">
-        <div className="relative min-h-[640px] h-[calc(100vh-80px)] max-h-[880px] w-full overflow-hidden">
+        <div className="relative min-h-[620px] h-[calc(100vh-80px)] max-h-[820px] w-full overflow-hidden">
           <img
             src={hero}
             alt="Young women and youth rallying together"
@@ -59,26 +55,26 @@ function Home() {
           <div className="absolute inset-0 bg-black/55" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/20" />
           <div className="relative h-full w-full px-6 sm:px-10 lg:px-16 xl:px-24 flex items-center">
-            <div className="text-white fade-up max-w-[720px] xl:max-w-[860px]">
-              <p className="text-sm md:text-base uppercase tracking-[0.28em] text-white/90 mb-7 font-medium">
-                Civic Engagement · Livelihoods · Green Communities
+            <div className="text-white fade-up max-w-[640px] xl:max-w-[720px]">
+              <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-white/85 mb-6">
+                Voice · Livelihoods · Green Communities
               </p>
-              <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] xl:text-[7rem] leading-[1.0] tracking-tight text-white font-medium">
-                WIMAGE <span className="italic text-primary font-normal">Kenya.</span>
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5rem] leading-[1.05] tracking-tight text-white">
+                WIMAGE <span className="italic text-primary">Kenya.</span>
               </h1>
-              <p className="mt-8 max-w-2xl text-lg md:text-xl text-white/90 leading-relaxed">
-                We work with young women in informal settlements to strengthen their civic engagement, build livelihoods, and create environment-conscious communities.
+              <p className="mt-7 max-w-xl text-base md:text-lg text-white/90 leading-relaxed">
+                We work with young women in informal settlements to strengthen their voices, build livelihoods, and create environment-conscious communities.
               </p>
-              <div className="mt-10 flex flex-wrap gap-4">
-                <button
-                  onClick={() => setConvoOpen(true)}
-                  className="inline-flex items-center px-8 py-4 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium text-base shadow-lg shadow-primary/30"
+              <div className="mt-9 flex flex-wrap gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center px-7 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all font-medium shadow-lg shadow-primary/30"
                 >
                   Start a Conversation
-                </button>
+                </Link>
                 <Link
                   to="/programs"
-                  className="inline-flex items-center px-8 py-4 rounded-full border border-white/60 text-white hover:bg-white hover:text-primary transition-colors font-medium text-base"
+                  className="inline-flex items-center px-7 py-3.5 rounded-full border border-white/60 text-white hover:bg-white hover:text-primary transition-colors font-medium"
                 >
                   Explore Programmes
                 </Link>
@@ -249,10 +245,10 @@ function Home() {
               <span>→</span>
             </Link>
             <a
-              href="mailto:info@wimage-kenya.org"
+              href="mailto:info@wimage.org.ke"
               className="inline-flex items-center justify-between gap-3 px-6 py-5 rounded-2xl border border-border hover:border-foreground/50 transition-colors"
             >
-              <span>info@wimage-kenya.org</span>
+              <span>info@wimage.org.ke</span>
               <span>→</span>
             </a>
           </div>
