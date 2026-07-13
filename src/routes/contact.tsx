@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
+import { submitContactMessage } from "@/lib/contact.functions";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -15,7 +17,8 @@ const reasons = ["For information", "For partnership", "For an inquiry", "To sha
 type Reason = typeof reasons[number];
 
 function Contact() {
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState<string>("");
   const [form, setForm] = useState<{ name: string; org: string; email: string; reason: Reason; message: string }>({
     name: "",
     org: "",
@@ -23,15 +26,29 @@ function Contact() {
     reason: "For information",
     message: "",
   });
+  const send = useServerFn(submitContactMessage);
 
-  function submit(e: React.FormEvent) {
+  async function submit(e: React.FormEvent) {
     e.preventDefault();
-    const subject = encodeURIComponent(`${form.reason}, from ${form.name || form.org || "a friend of WMAGE"}`);
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nOrganization: ${form.org}\nEmail: ${form.email}\nReason: ${form.reason}\n\n${form.message}`
-    );
-    window.location.href = `mailto:info@wimage.org.ke?subject=${subject}&body=${body}`;
-    setSent(true);
+    setStatus("sending");
+    setErrorMsg("");
+    try {
+      await send({
+        data: {
+          name: form.name,
+          organization: form.org,
+          email: form.email,
+          reason: form.reason,
+          message: form.message,
+        },
+      });
+      setStatus("sent");
+      setForm({ name: "", org: "", email: "", reason: "For information", message: "" });
+    } catch (err) {
+      console.error(err);
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
+      setStatus("error");
+    }
   }
 
   return (
@@ -48,8 +65,8 @@ function Contact() {
         <aside className="lg:col-span-5">
           <div className="rounded-3xl bg-ink text-cream p-8 md:p-10">
             <p className="eyebrow mb-2" style={{ color: "var(--ochre)" }}>Direct line</p>
-            <a href="mailto:info@wimage.org.ke" className="font-serif text-3xl md:text-4xl block hover:text-ochre transition-colors break-all">
-              info@wimage.org.ke
+            <a href="mailto:info@wimage-kenya.org" className="font-serif text-3xl md:text-4xl block hover:text-ochre transition-colors break-all">
+              info@wimage-kenya.org
             </a>
             <hr className="border-cream/15 my-7" />
             <dl className="space-y-4 text-cream/85 text-sm">
@@ -117,13 +134,18 @@ function Contact() {
               </div>
               <div className="sm:col-span-2 flex items-center justify-between gap-4 flex-wrap">
                 <p className="text-xs text-muted-foreground">
-                  Sending opens your email app addressed to info@wimage.org.ke.
+                  {status === "sent"
+                    ? "Thank you, your message has reached us. We will reply soon."
+                    : status === "error"
+                    ? errorMsg || "Something went wrong. Please try again."
+                    : "Your message is sent straight to info@wimage-kenya.org."}
                 </p>
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
+                  disabled={status === "sending"}
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all disabled:opacity-60"
                 >
-                  {sent ? "Thank you, talk soon" : "Send message →"}
+                  {status === "sending" ? "Sending…" : status === "sent" ? "Sent, thank you" : "Send message →"}
                 </button>
               </div>
             </form>
