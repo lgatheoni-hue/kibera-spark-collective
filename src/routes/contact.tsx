@@ -134,13 +134,18 @@ function Contact() {
               </div>
               <div className="sm:col-span-2 flex items-center justify-between gap-4 flex-wrap">
                 <p className="text-xs text-muted-foreground">
-                  Sending opens your email app addressed to info@wimage-kenya.org.
+                  {status === "sent"
+                    ? "Thank you, your message has reached us. We will reply soon."
+                    : status === "error"
+                    ? errorMsg || "Something went wrong. Please try again."
+                    : "Your message is sent straight to info@wimage-kenya.org."}
                 </p>
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all"
+                  disabled={status === "sending"}
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all disabled:opacity-60"
                 >
-                  {sent ? "Thank you, talk soon" : "Send message →"}
+                  {status === "sending" ? "Sending…" : status === "sent" ? "Sent, thank you" : "Send message →"}
                 </button>
               </div>
             </form>
