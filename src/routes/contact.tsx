@@ -30,7 +30,7 @@ function Contact() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nOrganization: ${form.org}\nEmail: ${form.email}\nReason: ${form.reason}\n\n${form.message}`
     );
-    window.location.href = `mailto:info@wimage.org.ke?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@wimage-kenya.org?subject=${subject}&body=${body}`;
     setSent(true);
   }
 
@@ -48,8 +48,8 @@ function Contact() {
         <aside className="lg:col-span-5">
           <div className="rounded-3xl bg-ink text-cream p-8 md:p-10">
             <p className="eyebrow mb-2" style={{ color: "var(--ochre)" }}>Direct line</p>
-            <a href="mailto:info@wimage.org.ke" className="font-serif text-3xl md:text-4xl block hover:text-ochre transition-colors break-all">
-              info@wimage.org.ke
+            <a href="mailto:info@wimage-kenya.org" className="font-serif text-3xl md:text-4xl block hover:text-ochre transition-colors break-all">
+              info@wimage-kenya.org
             </a>
             <hr className="border-cream/15 my-7" />
             <dl className="space-y-4 text-cream/85 text-sm">
@@ -117,7 +117,7 @@ function Contact() {
               </div>
               <div className="sm:col-span-2 flex items-center justify-between gap-4 flex-wrap">
                 <p className="text-xs text-muted-foreground">
-                  Sending opens your email app addressed to info@wimage.org.ke.
+                  Sending opens your email app addressed to info@wimage-kenya.org.
                 </p>
                 <button
                   type="submit"
