@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
+import { submitContactMessage } from "@/lib/contact.functions";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -15,7 +17,8 @@ const reasons = ["For information", "For partnership", "For an inquiry", "To sha
 type Reason = typeof reasons[number];
 
 function Contact() {
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState<string>("");
   const [form, setForm] = useState<{ name: string; org: string; email: string; reason: Reason; message: string }>({
     name: "",
     org: "",
@@ -23,15 +26,29 @@ function Contact() {
     reason: "For information",
     message: "",
   });
+  const send = useServerFn(submitContactMessage);
 
-  function submit(e: React.FormEvent) {
+  async function submit(e: React.FormEvent) {
     e.preventDefault();
-    const subject = encodeURIComponent(`${form.reason}, from ${form.name || form.org || "a friend of WMAGE"}`);
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nOrganization: ${form.org}\nEmail: ${form.email}\nReason: ${form.reason}\n\n${form.message}`
-    );
-    window.location.href = `mailto:info@wimage-kenya.org?subject=${subject}&body=${body}`;
-    setSent(true);
+    setStatus("sending");
+    setErrorMsg("");
+    try {
+      await send({
+        data: {
+          name: form.name,
+          organization: form.org,
+          email: form.email,
+          reason: form.reason,
+          message: form.message,
+        },
+      });
+      setStatus("sent");
+      setForm({ name: "", org: "", email: "", reason: "For information", message: "" });
+    } catch (err) {
+      console.error(err);
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
+      setStatus("error");
+    }
   }
 
   return (
