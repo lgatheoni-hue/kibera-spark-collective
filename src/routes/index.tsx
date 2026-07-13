@@ -57,13 +57,13 @@ function Home() {
           <div className="relative h-full w-full px-6 sm:px-10 lg:px-16 xl:px-24 flex items-center">
             <div className="text-white fade-up max-w-[640px] xl:max-w-[720px]">
               <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-white/85 mb-6">
-                Voice · Livelihoods · Green Communities
+                Civic Engagement · Livelihoods · Green Communities
               </p>
-              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5rem] leading-[1.05] tracking-tight text-white">
+              <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] xl:text-[7rem] leading-[1.02] tracking-tight text-white">
                 WIMAGE <span className="italic text-primary">Kenya.</span>
               </h1>
-              <p className="mt-7 max-w-xl text-base md:text-lg text-white/90 leading-relaxed">
-                We work with young women in informal settlements to strengthen their voices, build livelihoods, and create environment-conscious communities.
+              <p className="mt-8 max-w-xl text-lg md:text-xl text-white/90 leading-relaxed">
+                We work with young women in informal settlements to strengthen their leadership, build livelihoods, and create environment-conscious communities.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
                 <Link
