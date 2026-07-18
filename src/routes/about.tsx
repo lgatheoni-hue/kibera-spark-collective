@@ -37,11 +37,6 @@ const board: Person[] = [
     bio: "Board member coordinating diaspora relations, partnerships, and cross-border collaboration for WIMAGE Kenya.",
   },
   {
-    name: "Tinashe Sirikwa",
-    role: "Board Member",
-    bio: "Tinashe is a Social and Behaviour Change (SBC) professional with extensive experience coordinating community-centred health, resilience, and development programmes. Her expertise spans public health, nutrition, mental health, gender-based violence, sexual and reproductive health (SRHR), WASH, child protection, adolescent wellbeing, non-communicable diseases, and agriculture.",
-  },
-  {
     name: "Pascal Nabwana",
     role: "Board Member, Impact & Sustainability",
     bio: "Benjamin Pascal W. Nabwana is a youth leadership practitioner, governance advocate, and social entrepreneur serving as Vice President and Head of the Directorate of Strategic Partnerships, Resource Mobilization, and Corporate Relations at The Youth Parliament of Kenya (YPK). He holds an MBA, a Diploma in ICT from AIRADS, and a professional certification in Counseling Psychology.",
