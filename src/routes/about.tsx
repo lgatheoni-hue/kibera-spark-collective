@@ -46,7 +46,6 @@ const board: Person[] = [
 const secretariat: Person[] = [
   { name: "Patrick Kiarie", role: "Executive Director", bio: "Leads day-to-day operations, strategic direction, and partnerships across WIMAGE programmes." },
   { name: "Gerry Obiero", role: "Finance Director", bio: "Oversees financial planning, controls, and compliance to ensure resources deliver intended impact." },
-  { name: "Diana Mirina", role: "Programmes Coordinator", bio: "Coordinates programme design, implementation, and community engagement across all initiatives." },
   { name: "Pauline Wambui", role: "Communications Officer", bio: "Leads storytelling, brand voice, and community communications across digital and print." },
   { name: "Mary Njoki", role: "Impact, Monitoring & Evaluation Officer", bio: "Designs monitoring frameworks, tracks outcomes, and translates evidence into programme learning." },
   { name: "Gabriel Suter", role: "Field Officer", bio: "Works directly with community groups, supporting implementation and field-level coordination." },
