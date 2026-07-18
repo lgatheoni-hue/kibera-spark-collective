@@ -27,11 +27,6 @@ type Person = { name: string; role: string; bio: string };
 
 const board: Person[] = [
   {
-    name: "Marion Stetcy",
-    role: "Board Member, Partnerships",
-    bio: "Marion is the East African Community (EAC) Youth Ambassador to Kenya, Commonwealth Students Association Secretary for the Africa region, and Communications & Projects Officer at Youth for SDGs Kenya under the Tabianchi SOS Project. A certified mediator by the Judiciary of Kenya, leadership coach, and trainer, she is committed to equipping young people with the skills and values to lead with integrity, accountability, and resilience.",
-  },
-  {
     name: "Patrick Kiarie",
     role: "Board Secretary",
     bio: "Patrick is a chess enthusiast, passionate about youth empowerment, entrepreneurship, and technology for good. He works at the intersection of civic engagement, digital advocacy, and youth participation, designing and implementing programmes that empower young people and strengthen inclusive public dialogue with a focus on governance and social change in Kenya.",
