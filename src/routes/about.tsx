@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import kibera from "../assets/photo-maktaba.jpg";
-import team6 from "../assets/photo-team-6.jpg";
-import team8 from "../assets/photo-team-8.jpg";
-import counselling from "../assets/photo-counselling-2.jpg";
-import community from "../assets/photo-community-3.jpg";
+import team6 from "../assets/u-team-line.jpg";
+import team8 from "../assets/u-team-group.jpg";
+import counselling from "../assets/u-discussion.jpg";
+import community from "../assets/u-observers.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
